@@ -4,12 +4,13 @@ import time
 import serial
 from datetime import datetime
 
-Cornerposition = (43.6, 19.6, 12)  # This needs updating before running
+# Cornerposition = (61, 23, 0)
+Cornerposition = (0, 0, 0)  # This needs updating before running
 retractheight = 15
 waittime = 5
 savestring = "Data/Data6Flat"
 
-Ender = serial.Serial("COM10", 115200)
+Ender = serial.Serial("COM11", 115200)
 time.sleep(2)
 
 
@@ -42,7 +43,8 @@ def takereading(depth):
 
 
 def setup():
-    Ender.write(str.encode("G28\r\n"))
+    # Ender.write(str.encode("G28\r\n")) // We start under the assumption that printer has been homed & set to height
+    Ender.write(str.encode("G92 X0 Y0 Z0\r\n"))
     Ender.write(str.encode("G1 Z"+str(Cornerposition[2]+retractheight)+" F400\r\n"))
     Ender.write(str.encode("G1 X "+str(Cornerposition[0])+" Y "+str(Cornerposition[1])+" F1000\r\n"))
     waitforposition()
