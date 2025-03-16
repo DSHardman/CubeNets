@@ -7,10 +7,10 @@ from datetime import datetime
 # Cornerposition = (61, 23, 0)
 Cornerposition = (0, 0, 0)  # This needs updating before running
 retractheight = 15
-waittime = 5
-savestring = "Data/Data6Flat"
+waittime = 8
+savestring = "Data/Data24Flat/Data24Flat_skin"
 
-Ender = serial.Serial("COM11", 115200)
+Ender = serial.Serial("COM7", 115200)
 time.sleep(2)
 
 
@@ -53,16 +53,16 @@ def setup():
 def main():
     # Random probing at 3 mm
     depth = 3  # In mm
-    for i in range(1000):
+    for i in range(3000):
         print(i)
 
         # Keep selecting random coordinates until these are located within net
         while 1:
-            x = 120*random.random()
-            y = 90*random.random() - 30
-            if 0 <= y <= 30:
+            x = 115*random.random()
+            y = 85*random.random() - 27.5
+            if 0 <= y <= 27.5:
                 break
-            elif 60 <= x <= 90:
+            elif 57.5 <= x <= 87.5:
                 break
 
         Ender.write(str.encode("G1 X "+str(Cornerposition[0]+x)+" Y "+str(Cornerposition[1]+y)+" F800\r\n"))
