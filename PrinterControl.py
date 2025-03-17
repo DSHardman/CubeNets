@@ -8,7 +8,7 @@ from datetime import datetime
 Cornerposition = (0, 0, 0)  # This needs updating before running
 retractheight = 15
 waittime = 8
-savestring = "Data/Data24Flat/Data24Flat_skin"
+savestring = "Data/Data24Flat/Data24Flat_repeats2"
 
 Ender = serial.Serial("COM7", 115200)
 time.sleep(2)
@@ -53,17 +53,20 @@ def setup():
 def main():
     # Random probing at 3 mm
     depth = 3  # In mm
-    for i in range(3000):
+    for i in range(5):
         print(i)
 
-        # Keep selecting random coordinates until these are located within net
-        while 1:
-            x = 115*random.random()
-            y = 85*random.random() - 27.5
-            if 0 <= y <= 27.5:
-                break
-            elif 57.5 <= x <= 87.5:
-                break
+        # # Keep selecting random coordinates until these are located within net
+        # while 1:
+        #     x = 115*random.random()
+        #     y = 85*random.random() - 27.5
+        #     if 0 <= y <= 27.5:
+        #         break
+        #     elif 57.5 <= x <= 87.5:
+        #         break
+
+        x = 68
+        y = 40
 
         Ender.write(str.encode("G1 X "+str(Cornerposition[0]+x)+" Y "+str(Cornerposition[1]+y)+" F800\r\n"))
         waitforposition()
