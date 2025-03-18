@@ -8,7 +8,7 @@ from datetime import datetime
 Cornerposition = (0, 0, 0)  # This needs updating before running
 retractheight = 15
 waittime = 8
-savestring = "Data/Data24Flat/Data24Flat_repeats2"
+savestring = "Data/Data24Flat/Data24Flat_movingdepths2"
 
 Ender = serial.Serial("COM7", 115200)
 time.sleep(2)
@@ -53,7 +53,7 @@ def setup():
 def main():
     # Random probing at 3 mm
     depth = 3  # In mm
-    for i in range(5):
+    for i in range(3):
         print(i)
 
         # # Keep selecting random coordinates until these are located within net
@@ -65,15 +65,15 @@ def main():
         #     elif 57.5 <= x <= 87.5:
         #         break
 
-        x = 68
-        y = 40
-
-        Ender.write(str.encode("G1 X "+str(Cornerposition[0]+x)+" Y "+str(Cornerposition[1]+y)+" F800\r\n"))
-        waitforposition()
-        times = takereading(depth)
-        with open(savestring+'_3.txt', 'a') as file:
-            file.write('%s, %s, %s, %s, %s\n' % (str(x), str(y), times[0], times[1], times[2]))
-        time.sleep(waittime)
+        x = 69
+        y = 0
+        for j in range(5):
+            Ender.write(str.encode("G1 X "+str(Cornerposition[0]+x)+" Y "+str(Cornerposition[1]+y)+" F800\r\n"))
+            waitforposition()
+            times = takereading(j+1)
+            with open(savestring+'_3.txt', 'a') as file:
+                file.write('%s, %s, %s, %s, %s\n' % (str(x), str(y), times[0], times[1], times[2]))
+            time.sleep(waittime)
 
 setup()
 main()
