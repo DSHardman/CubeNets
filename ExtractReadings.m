@@ -1,11 +1,11 @@
 % Inefficient script for extracting data - good enough for functionality
-% [readings, readingtimes] = extracteit("Press3_second_skinData");
-% [positions, positiontimes] = extractprinter("Data6Flat_skin2_3.txt");
+% [readings, readingtimes] = extracteit("Data/Data24Flat/Data24Flat_3");
+% [positions, positiontimes] = extractprinter("Data/Data24Flat/Data24Flat_skin_3.txt");
 
 readingst = [];
 readingtimest = [];
-for i = 1:10
-    load("cube6_"+string(i)+".mat");
+for i = 1:9
+    load("cube24_"+string(i)+".mat");
     readingst = [readingst; readings];
     readingtimest = [readingtimest readingtimes];
 end
@@ -25,15 +25,17 @@ function [readings, readingtimes] = extracteit(filename)
     readings = zeros([10000, 360]);
     readingtimes(10000) = datetime();
 
-    for k = 1:10
+    for k = 1:9
         for i = 1:10000
-            i
+            if mod(i, 100) == 0
+                i
+            end
             line = char(lines(i+(k-1)*10000));
             readingtimes(i) = datetime(line(2:24));
             response = str2double(split(line(27:end), ", "));
             readings(i, :) = response(1:360);
         end
-        save("cube6_"+string(k)+".mat", "readings", "readingtimes");
+        save("cube24_"+string(k)+".mat", "readings", "readingtimes");
     end
 end
 
