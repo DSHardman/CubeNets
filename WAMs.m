@@ -1,5 +1,5 @@
 %% Load in data
-load("Data/Extracted24.mat");
+load("Data/Extracted6.mat");
 
 responses = responseobject.responses;
 targetpositions = responseobject.positions;
@@ -12,6 +12,7 @@ ranking = franking(responses, targetpositions);
 figure();
 error = wamtesting(ranking, responses, targetpositions, 1);
 sgtitle("Mean error over entire test set: "+ string(error) + " mm");
+% Note that naive prediction would be 29.8537 mm
 return
 
 % %% Plot sensitivity maps of top 10 configurations
