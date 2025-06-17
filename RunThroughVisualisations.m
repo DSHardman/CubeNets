@@ -1,8 +1,9 @@
-n_elec = 6;
+n_elec = 24;
+suffix = "Folded";
 
 I = imread("Cube"+string(n_elec)+".jpg");
-load("ElectrodeOrder"+string(n_elec)+".mat");
-load("Cube"+string(n_elec)+"Locations.mat");
+load("ElectrodeOrder"+string(n_elec)+suffix+".mat");
+load("Cube"+string(n_elec)+"Locations"+suffix+".mat");
 load("Data/Extracted"+string(n_elec)+".mat");
 
 for i = 1:360
@@ -19,7 +20,7 @@ for i = 1:360
         scatter(-responseobject.positions(:,1), responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
     end
 
-    set(gcf, 'color', 'w', 'position', [1147 290 270 420]);
+    set(gcf, 'color', 'w', 'position', [946    98   462   730]);
     sgtitle(string(i));
 
     pause();
