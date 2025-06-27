@@ -1,18 +1,19 @@
 % Inefficient script for extracting data - good enough for functionality
-% [readings, readingtimes] = extracteit("Data/Data24Flat/Data24Flat_3");
-% [positions, positiontimes] = extractprinter("Data/Data24Flat/Data24Flat_skin_3.txt");
+% [readings, readingtimes] = extracteit("Data/Data24FlatConnect/Data24Connect");
+[positions, positiontimes] = extractprinter("Data/Data24FlatConnect/fitz.txt");
 
 readingst = [];
 readingtimest = [];
-for i = 1:9
+for i = 1:8
     load("cube24_"+string(i)+".mat");
     readingst = [readingst; readings];
     readingtimest = [readingtimest readingtimes];
 end
 
-load("extractedpositions.mat");
+% load("extractedpositions.mat");
+
 responseobject = combinedata(readingst, readingtimest, positions, positiontimes);
-save("wholeway.mat", "responseobject");
+save("Data24FlatConnect.mat", "responseobject");
 
 % Extract data from EIT board
 function [readings, readingtimes] = extracteit(filename)

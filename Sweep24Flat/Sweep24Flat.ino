@@ -642,8 +642,8 @@ void read_frame_custom(meas_t drive_type, meas_t meas_type, double * rms_array, 
                 break;
         }
         
-        mux_write(CHIP_SEL_MUX_SRC, elec_to_mux[src_pin], MUX_EN);
-        mux_write(CHIP_SEL_MUX_SINK, elec_to_mux[sink_pin], MUX_EN);
+        mux_write(CHIP_SEL_MUX_SRC, elec_to_mux_custom[src_pin], MUX_EN);
+        mux_write(CHIP_SEL_MUX_SINK, elec_to_mux_custom[sink_pin], MUX_EN);
 
         delayMicroseconds(150);
 
