@@ -17,7 +17,7 @@ for i = 1:360
     if n_elec == 6
         scatter(responseobject.positions(:,1), -responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
     elseif n_elec == 24
-        scatter(-responseobject.positions(:,1), responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
+        scatter(responseobject.positions(:,1), responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
     end
 
     set(gcf, 'color', 'w', 'position', [946    98   462   730]);

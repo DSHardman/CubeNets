@@ -1,5 +1,5 @@
 %% Load in data
-load("Data/Extracted6.mat");
+load("Data/Extracted24.mat");
 
 responses = responseobject.responses;
 targetpositions = responseobject.positions;
