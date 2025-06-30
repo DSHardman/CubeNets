@@ -53,7 +53,7 @@ def setup():
 def main():
     # Random probing at 3 mm
     depth = 3  # In mm
-    for i in range(1000):
+    for i in range(3000):
         print(i)
 
         # Keep selecting random coordinates until these are located within net
