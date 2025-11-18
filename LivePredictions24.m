@@ -37,9 +37,9 @@ for i = 1:n
     end
     % plot(data);
 
-    % baseline = mean(baselineframes);
+    baseline = mean(baselineframes);
     datab = data - baseline;
-    % baselineframes = [baselineframes(2:5, :); data];
+    baselineframes = [baselineframes(2:5, :); data];
 
     % Realtime WAMs prediction
     sum = zeros([size(responses, 1), 1]);
@@ -58,13 +58,13 @@ for i = 1:n
 
     % Plot prediction
     scatter(targetpositions(:,1), targetpositions(:,2), 150, sum, 'filled');
-    clim([-0.5 0.5]);
+    clim([-0.75 0.75]);
     title(string(i));
 
     hold on
-    if mean(sum) > 0.015
-        % scatter(prediction(1), prediction(2), 200, 'm', 'filled');
-    end
+    % if mean(sum) > 0.015
+    %     % scatter(prediction(1), prediction(2), 200, 'm', 'filled');
+    % end
     axis off
     set(gcf, 'color', 'w');
     hold off
