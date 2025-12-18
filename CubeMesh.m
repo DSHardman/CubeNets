@@ -61,7 +61,7 @@ fmdl = merge_meshes(fmdl1, fmdl2, fmdl3);
 
 % Add electrodes
 el_nodes = [73 81 209 217 345 353 481 489 617 625 753 761,...
-    889 897 1025 1033 1446 1574 1454 1582 1173 1181 1301 1309];
+    889 897 1025 1033 1446 1574 1454 1582 1173 1301 1181 1309];
 for i=1:length(el_nodes)
     n = el_nodes(i);
     fmdl.electrode(i).nodes= n;
@@ -211,6 +211,7 @@ inv2d.reconst_type= 'difference';
 inv2d.jacobian_bkgnd.value = 1;
 inv2d.fwd_model= fmdl;
 inv2d.hyperparameter.value = 0.05;
+% inv2d.hyperparameter.value = 0.1;
 inv2d.solve=       'inv_solve_diff_GN_one_step';
 inv2d.RtR_prior=   'prior_laplace';
 inv2d.stimulation = fmdl.stimulation;
@@ -220,45 +221,95 @@ rec_img= inv_solve(inv2d, vh.meas, vc.meas);
 subplot(2,2,4);
 f = show_fem(rec_img, [1 0 0]); axis off;
 
-return
 
 %% Plot actual data, if board attached
 clear device
-device = serialport("COM17",9600);
+device = serialport("COM15",9600);
 device.Timeout = 25;
 
 flush(device); readline(device);
 fprintf("Collecting baseline...\n");
 baseline = zeros([1 360]);
 for i = 1:10
-    baseline = baseline + str2num(readline(device));
+    temp = split(readline(device), ",");
+    for j = 1:360
+        if contains(char(temp(j)), 'C')
+            fprintf("Baseline Clipped\n");
+            unclipped = char(temp(j));
+            unclipped = unclipped(1:end-1);
+            baseline(j) = baseline(j) + str2num(unclipped);
+        else
+            baseline(j) = baseline(j) + str2num(temp(j));
+        end
+    end
 end
 baseline = baseline./10;
 fprintf("Baseline collected.\n");
 
 figure();
-set(gcf, 'position', [979   123   391   186], 'color', 'w');
-for i = 1:1000
-    data = str2num(readline(device));
-    % data = data - baseline;
-    % 
-    % clf
-    % for i = 1:5
-    %     plot([1+(i-1)*72:32+(i-1)*72], data(1+(i-1)*72:32+(i-1)*72), 'color', 'b');
-    %     hold on
-    %     plot([33+(i-1)*72:72+(i-1)*72], data(33+(i-1)*72:72+(i-1)*72), 'color', 'r');
-    % end
-    % 
-    % box off;
-    % xlim([1 360]);
-    % ylim([-0.05 0.05]);
-    % set(gcf, 'position', [979   123   391   186], 'color', 'w');
-    % drawnow();
+% set(gcf, 'position', [979   123   391   186], 'color', 'w');
+
+
+% Continuous mode: initial baseline
+% while 1
+%         temp = split(readline(device),",");
+%         for j = 1:360
+%             if contains(char(temp(j)), 'C')
+%                 fprintf("Clipped\n");
+%                 unclipped = char(temp(j));
+%                 unclipped = unclipped(1:end-1);
+%                 data(j) = str2num(unclipped);
+%             else
+%                 data(j) = str2num(temp(j));
+%             end
+%         end
+% 
+%         rec_img= inv_solve(inv2d, baseline.', data.');
+%         f = show_fem(rec_img, [1 0 0]);
+%         drawnow();
+% end
+
+% Discrete mode: given baselines
+while 1
+    flush(device);
+    fprintf("Collecting baseline...\n");
+    readline(device);
+    temp = split(readline(device), ",");
+    for j = 1:360
+        if contains(char(temp(j)), 'C')
+            fprintf("Baseline Clipped\n");
+            unclipped = char(temp(j));
+            unclipped = unclipped(1:end-1);
+            baseline(j) = str2num(unclipped);
+        else
+            baseline(j) = str2num(temp(j));
+        end
+    end
+
+    pause();
+
+    flush(device);
+    fprintf("Collecting Data...\n");
+    readline(device);
+    temp = split(readline(device), ",");
+    for j = 1:360
+        if contains(char(temp(j)), 'C')
+            fprintf("Data Clipped\n");
+            unclipped = char(temp(j));
+            unclipped = unclipped(1:end-1);
+            data(j) = str2num(unclipped);
+        else
+            data(j) = str2num(temp(j));
+        end
+    end
 
     rec_img= inv_solve(inv2d, baseline.', data.');
     f = show_fem(rec_img, [1 0 0]);
     drawnow();
+
+    pause();
 end
+
 
 clear device
 
