@@ -305,6 +305,7 @@ while 1
 
     rec_img= inv_solve(inv2d, baseline.', data.');
     f = show_fem(rec_img, [1 0 0]);
+    set(gca, 'YDir', 'reverse'); % for video alignment
     drawnow();
 
     pause();
