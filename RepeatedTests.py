@@ -4,7 +4,6 @@ import time
 import serial
 from datetime import datetime
 
-
 from scipy.io import loadmat
 import time
 import amodo_eit as eit
@@ -25,8 +24,6 @@ if not devices:
 device = devices[0]
 if len(devices) > 1:
     print_warning("Multiple Amodo EIT devices detected.")
-
-from vispy import app, scene
 
 # Cornerposition = (61, 23, 0)
 Cornerposition = (0, 0, 0)  # This needs updating before running
@@ -57,19 +54,14 @@ def takereading(depth):
     waitforposition()
 
     time.sleep(waittime)
-
-    current_frame, clipping = device.latest_frame
     Ender.write(str.encode("G1 Z" + str(Cornerposition[2] + retractheight) + " F3000\r\n"))
     waitforposition()
-
-    return current_frame
-
 
 def setup():
     # Ender.write(str.encode("G28\r\n")) // We start under the assumption that printer has been homed & set to height
     Ender.write(str.encode("G92 X0 Y0 Z0\r\n"))
-    Ender.write(str.encode("G1 Z"+str(Cornerposition[2]+retractheight)+" F400\r\n"))
-    Ender.write(str.encode("G1 X "+str(Cornerposition[0])+" Y "+str(Cornerposition[1])+" F1000\r\n"))
+    Ender.write(str.encode("G1 Z" + str(Cornerposition[2] + retractheight) + " F400\r\n"))
+    Ender.write(str.encode("G1 X " + str(Cornerposition[0]) + " Y " + str(Cornerposition[1]) + " F1000\r\n"))
     waitforposition()
 
     # device.reset()
@@ -101,31 +93,24 @@ def setup():
 
 
 def main():
-    # Random probing at 3 mm
-    depth = 3  # In mm
-    for i in range(3000):
-        print(i)
+    depths = [2, 3, 5]  # In mm
+    positions = [[45, 0], [45, 37.5], [67.5, 17]]
+    for position in positions:
+        x = position[0]
+        y = position[1]
 
-        # Keep selecting random coordinates until these are located within net
-        while 1:
-            x = 120*random.random()
-            y = 90*random.random() - 30
-            if 0 <= y <= 30:
-                break
-            elif 30 <= x <= 60:
-                break
+        for depth in depths:
+            for i in range(5):
+                print(i)
 
-        Ender.write(str.encode("G1 X "+str(Cornerposition[0]+x)+" Y "+str(Cornerposition[1]+y)+" F3000\r\n"))
-        waitforposition()
-        outdata = takereading(depth)
-        with open(savestring + '.txt', 'a') as file:
-            file.write('%s, %s, %s\n' % (str(x), str(y), str(outdata)))
-        np.savetxt(savestring+str(i)+".txt", outdata, delimiter=",")
+                Ender.write(
+                    str.encode("G1 X " + str(Cornerposition[0] + x) + " Y " + str(Cornerposition[1] + y) + " F3000\r\n"))
+                waitforposition()
+                takereading(depth)
+
+                time.sleep(waittime)
 
 
-        time.sleep(waittime)
-
-
-with device:
-    setup()
-    main()
+setup()
+wait = input("Manually record Amodo streaming...")
+main()
