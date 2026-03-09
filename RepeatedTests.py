@@ -31,7 +31,7 @@ retractheight = 5
 waittime = 5
 savestring = "Data/fitz"
 
-Ender = serial.Serial("COM12", 115200)
+Ender = serial.Serial("COM5", 115200)
 time.sleep(2)
 
 print_info(f"Using device: {device.port}, version {device.version}, build {device.build_date_time}")
@@ -110,7 +110,7 @@ def main():
 
                 time.sleep(waittime)
 
-
-setup()
-wait = input("Manually record Amodo streaming...")
+with device:
+    setup()
+    wait = input("Manually record Amodo streaming...")
 main()
