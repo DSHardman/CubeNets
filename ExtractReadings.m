@@ -1,6 +1,8 @@
 % Inefficient script for extracting data - good enough for functionality
-[readings, readingtimes] = extracteit("Data/Data24FlatConnect/Data24");
-[positions, positiontimes] = extractprinter("Data/Data24FlatConnect/fitz2.txt");
+% [readings, readingtimes] = extracteit("Data/Data24FlatConnect/Data24");
+[readings, readingtimes] = extracteit("Data/Repeats.txt");
+% [positions, positiontimes] = extractprinter("Data/Data24FlatConnect/fitz2.txt");
+return
 
 readingst = [];
 readingtimest = [];
@@ -26,19 +28,19 @@ function [readings, readingtimes] = extracteit(filename)
     readings = zeros([10000, 360]);
     readingtimes(10000) = datetime();
 
-    for k = 10
-        for i = 1:10000
+    for k = 1
+        for i = 1:486
             if mod(i, 100) == 0
                 i
             end
             line = char(lines(i+(k-1)*10000));
             readingtimes(i) = datetime(line(2:24));
-            response = str2double(split(line(27:end), ", "));
+            response = str2double(split(line(27:end), ","));
             if length(response) >= 360
                 readings(i, :) = response(1:360);
             end
         end
-        save("cube24_"+string(k)+".mat", "readings", "readingtimes");
+        % save("cube24_"+string(k)+".mat", "readings", "readingtimes");
     end
 end
 
