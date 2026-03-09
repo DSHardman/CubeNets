@@ -71,9 +71,9 @@ def setup():
     print_info("Loading electrode configuration...")
     electrode_configurations = []
     # pin_mapping = [4, 3, 5, 9, 6, 10, 7, 11, 8, 12, 17, 19, 18, 23, 22, 24, 1, 15, 2, 16, 13, 20, 14, 21]
-    # pin_mapping = [7, 5, 9, 17, 11, 19, 13, 21, 15, 23, 41, 45, 43, 53, 51, 55, 1, 37, 3, 39, 33, 47, 35, 49]
+    pin_mapping = [7, 5, 9, 17, 11, 19, 13, 21, 15, 23, 41, 45, 43, 53, 51, 55, 1, 37, 3, 39, 33, 47, 35, 49]
     # pin_mapping = [8, 6, 10, 18, 12, 20, 14, 22, 16, 24, 42, 46, 44, 54, 52, 56, 2, 38, 4, 40, 34, 48, 36, 50]
-    pin_mapping = [52, 50, 40, 48, 38, 46, 36, 44, 34, 42, 12, 16, 4, 14, 2, 6, 22, 8, 24, 10, 54, 18, 56, 20]
+    # pin_mapping = [52, 50, 40, 48, 38, 46, 36, 44, 34, 42, 12, 16, 4, 14, 2, 6, 22, 8, 24, 10, 54, 18, 56, 20]
 
     for i in range(len(configs)):
         configuration = (pin_mapping[configs[i][0]], pin_mapping[configs[i][1]], pin_mapping[configs[i][2]],
