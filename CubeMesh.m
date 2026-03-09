@@ -132,7 +132,6 @@ for i = 1:size(sets, 1)
 
 end
 
-
 %% Solve forward homogeneous model
 sim_img= mk_image(fmdl,1);
 homo_c = 0.1;

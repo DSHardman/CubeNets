@@ -52,6 +52,7 @@ def waitforposition():
 def takereading(depth):
     Ender.write(str.encode("G1 Z" + str(Cornerposition[2]) + " F3000\r\n"))
     waitforposition()
+    empty_frame, clipping = device.latest_frame
 
     Ender.write(str.encode("G1 Z" + str(Cornerposition[2] - depth) + " F3000\r\n"))
     waitforposition()
@@ -62,7 +63,7 @@ def takereading(depth):
     Ender.write(str.encode("G1 Z" + str(Cornerposition[2] + retractheight) + " F3000\r\n"))
     waitforposition()
 
-    return current_frame
+    return empty_frame, current_frame
 
 
 def setup():
@@ -119,8 +120,9 @@ def main():
         waitforposition()
         outdata = takereading(depth)
         with open(savestring + '.txt', 'a') as file:
-            file.write('%s, %s, %s\n' % (str(x), str(y), str(outdata)))
-        np.savetxt(savestring+str(i)+".txt", outdata, delimiter=",")
+            file.write('%s, %s, %s, %s\n' % (str(x), str(y), str(outdata[0]), str(outdata[1])))
+        np.savetxt(savestring+str(i)+"EMPTY.txt", outdata[0], delimiter=",")
+        np.savetxt(savestring + str(i) + ".txt", outdata[1], delimiter=",")
 
 
         time.sleep(waittime)
