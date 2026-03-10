@@ -32,9 +32,9 @@ from vispy import app, scene
 Cornerposition = (0, 0, 0)  # This needs updating before running
 retractheight = 5
 waittime = 5
-savestring = "Data/fitz"
+savestring = "Data/AmodoRandoms"
 
-Ender = serial.Serial("COM12", 115200)
+Ender = serial.Serial("COM5", 115200)
 time.sleep(2)
 
 print_info(f"Using device: {device.port}, version {device.version}, build {device.build_date_time}")
