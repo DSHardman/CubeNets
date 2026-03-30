@@ -4,9 +4,10 @@ suffix = "Flat";
 I = imread("Cube"+string(n_elec)+".jpg");
 load("ElectrodeOrder"+string(n_elec)+suffix+".mat");
 load("Cube"+string(n_elec)+"Locations"+suffix+".mat");
-load("Data/Extracted"+string(n_elec)+".mat");
+% load("Data/Extracted"+string(n_elec)+".mat");
+load("Data/AmodoRandoms/AmodoExtracted.mat");
 
-for i = 2*72:360
+for i = 170:360
     subplot(2,1,1);
     imshow(I);
     hold on
@@ -20,7 +21,8 @@ for i = 2*72:360
         scatter(responseobject.positions(:,1), responseobject.positions(:,2), 30, abs(responseobject.responses(:, i)), 'filled');
     end
 
-    set(gcf, 'color', 'w', 'position', [946    98   462   730]);
+    % set(gcf, 'color', 'w', 'position', [946    98   462   730]);
+    set(gcf, 'color', 'w');
     sgtitle(string(i));
     colorbar();
 

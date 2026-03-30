@@ -1,6 +1,6 @@
 % Inefficient script for extracting data - good enough for functionality
 % [readings, readingtimes] = extracteit("Data/Data24FlatConnect/Data24");
-[readings, readingtimes] = extracteit("Data/Repeats.txt");
+[readings, readingtimes] = extracteit("Data/ConductiveRepeats.txt");
 % [positions, positiontimes] = extractprinter("Data/Data24FlatConnect/fitz2.txt");
 return
 
@@ -29,7 +29,7 @@ function [readings, readingtimes] = extracteit(filename)
     readingtimes(10000) = datetime();
 
     for k = 1
-        for i = 1:486
+        for i = 1:494
             if mod(i, 100) == 0
                 i
             end
