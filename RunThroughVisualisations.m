@@ -7,7 +7,7 @@ load("Cube"+string(n_elec)+"Locations"+suffix+".mat");
 % load("Data/Extracted"+string(n_elec)+".mat");
 load("Data/AmodoRandoms/AmodoExtracted.mat");
 
-for i = 170:360
+for i = 79:360
     subplot(2,1,1);
     imshow(I);
     hold on

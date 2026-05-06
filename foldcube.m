@@ -1,4 +1,4 @@
-function foldcube(responseobject, response, visiblesides, multiplier)
+function foldcube(responseobject, response, visiblesides)
     
     clear sides
     for i = 1:6

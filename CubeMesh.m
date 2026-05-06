@@ -161,12 +161,12 @@ vc = fwd_solve(sim_img);
 subplot(2,2,1);
 show_fem(sim_img); axis off;
 % Add electrode numbers
-for i = 1:24
-    elec_pos = mean(fmdl.nodes(fmdl.electrode(i).nodes, :), 1);
-    text(elec_pos(1), elec_pos(2), num2str(i), ...
-         'FontSize', 12, 'FontWeight', 'bold', 'Color', 'k', ...
-         'HorizontalAlignment', 'center');
-end
+% for i = 1:24
+%     elec_pos = mean(fmdl.nodes(fmdl.electrode(i).nodes, :), 1);
+%     text(elec_pos(1), elec_pos(2), num2str(i), ...
+%          'FontSize', 12, 'FontWeight', 'bold', 'Color', 'k', ...
+%          'HorizontalAlignment', 'center');
+% end
 
 %% Plot quiver of injection which causes greatest voltage change
 maxval = 0; channel = 0;

@@ -1,0 +1,38 @@
+load("Data/RepeatsExtracted.mat");
+close all
+
+figure;
+channel = 79;
+subplot(3,1,1); plotdepths(readings, channel, [18 61; 70 113; 121 164]);
+subplot(3,1,2); plotdepths(readings, channel, [173 216; 224 267; 275 318]);
+subplot(3,1,3); plotdepths(readings, channel, [327 370; 378 421; 420 472]);
+set(gcf, 'color', 'w', 'position', [644 165 310 631]);
+
+figure;
+channel = 290;
+subplot(3,1,1); plotdepths(readings, channel, [18 61; 70 113; 121 164]);
+subplot(3,1,2); plotdepths(readings, channel, [173 216; 224 267; 275 318]);
+subplot(3,1,3); plotdepths(readings, channel, [327 370; 378 421; 420 472]);
+set(gcf, 'color', 'w', 'position', [994 155 310 631]);
+
+
+%% Data stream
+figure();
+heatmap(normalize(readings, "range", [0 1]).', "colormap", gray); grid off
+colorbar off
+Ax = gca;
+Ax.XDisplayLabels = nan(size(Ax.XDisplayData));
+Ax.YDisplayLabels = nan(size(Ax.YDisplayData));
+set(gcf, 'color', 'w', 'position', [139 250 1274 527]);
+
+function plotdepths(readings, channel, locs)
+    readings = 1000.*readings;
+    for i = 1:size(locs, 1)
+        plot(0:1.08:1.08*(locs(i,2)-locs(i,1)),  readings(locs(i, 1):locs(i, 2), channel)-readings(locs(i, 1), channel), 'linewidth', 2);
+        hold on
+    end
+    box off
+    xlim([0 46]);
+    ylim([-1.5 1.5]);
+    set(gca, 'linewidth', 2, 'fontsize', 15);
+end
