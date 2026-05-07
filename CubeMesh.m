@@ -1,4 +1,5 @@
 clf
+close all
 
 %% First mesh attempt: subtractive
 % % Start with rectangle, from which elements will be removed
@@ -219,8 +220,8 @@ inv2d= eidors_obj('inv_model', 'EIT inverse');
 inv2d.reconst_type= 'difference';
 inv2d.jacobian_bkgnd.value = 1;
 inv2d.fwd_model= fmdl;
-inv2d.hyperparameter.value = 0.05;
-% inv2d.hyperparameter.value = 0.1;
+% inv2d.hyperparameter.value = 0.05; % start 7th may
+inv2d.hyperparameter.value = 0.5;
 inv2d.solve=       'inv_solve_diff_GN_one_step';
 inv2d.RtR_prior=   'prior_laplace';
 inv2d.stimulation = fmdl.stimulation;
@@ -233,13 +234,13 @@ colorbar off;
 
 %% Plot actual data, if board attached
 clear device
-device = serialport("COM15",9600);
+device = serialport("COM11",9600);
 device.Timeout = 25;
 
 flush(device); readline(device);
 fprintf("Collecting baseline...\n");
 baseline = zeros([1 360]);
-for i = 1:10
+for i = 1:1
     temp = split(readline(device), ",");
     for j = 1:360
         if contains(char(temp(j)), 'C')
@@ -252,73 +253,105 @@ for i = 1:10
         end
     end
 end
-baseline = baseline./10;
+baseline = baseline./i;
 fprintf("Baseline collected.\n");
+
+baselinebuffer = [baseline; baseline; baseline; baseline];
 
 figure();
 % set(gcf, 'position', [979   123   391   186], 'color', 'w');
 
 
 % Continuous mode: initial baseline
-% while 1
-%         temp = split(readline(device),",");
-%         for j = 1:360
-%             if contains(char(temp(j)), 'C')
-%                 fprintf("Clipped\n");
-%                 unclipped = char(temp(j));
-%                 unclipped = unclipped(1:end-1);
-%                 data(j) = str2num(unclipped);
-%             else
-%                 data(j) = str2num(temp(j));
-%             end
-%         end
-% 
-%         rec_img= inv_solve(inv2d, baseline.', data.');
-%         f = show_fem(rec_img, [1 0 0]);
-%         drawnow();
-% end
-
-% Discrete mode: given baselines
 while 1
-    flush(device);
-    fprintf("Collecting baseline...\n");
-    readline(device);
-    temp = split(readline(device), ",");
-    for j = 1:360
-        if contains(char(temp(j)), 'C')
-            fprintf("Baseline Clipped\n");
-            unclipped = char(temp(j));
-            unclipped = unclipped(1:end-1);
-            baseline(j) = str2num(unclipped);
-        else
-            baseline(j) = str2num(temp(j));
+        % flush(device);
+        % while length(temp) ~= 360
+        %     temp = split(readline(device),",");
+        % end
+        temp = split(readline(device),",");
+        for j = 1:360
+            if contains(char(temp(j)), 'C')
+                fprintf("Clipped\n");
+                unclipped = char(temp(j));
+                unclipped = unclipped(1:end-1);
+                data(j) = str2num(unclipped);
+            else
+                data(j) = str2num(temp(j));
+            end
         end
-    end
 
-    pause();
+        baselinebuffer = [baselinebuffer(2:4, :); data];
 
-    flush(device);
-    fprintf("Collecting Data...\n");
-    readline(device);
-    temp = split(readline(device), ",");
-    for j = 1:360
-        if contains(char(temp(j)), 'C')
-            fprintf("Data Clipped\n");
-            unclipped = char(temp(j));
-            unclipped = unclipped(1:end-1);
-            data(j) = str2num(unclipped);
-        else
-            data(j) = str2num(temp(j));
+        rec_img= inv_solve(inv2d, baselinebuffer(1,:).', data.');
+        % rec_img= inv_solve(inv2d, baseline.', data.');
+
+        upperlimit = 0.00015; % Cut colorbar at zero
+        if max(rec_img.elem_data) < upperlimit
+            rec_img.calc_colours.ref_level = upperlimit/2;
+            rec_img.calc_colours.clim = upperlimit/2;
         end
-    end
+        rec_img.elem_data = max(rec_img.elem_data, 0);
 
-    rec_img= inv_solve(inv2d, baseline.', data.');
-    f = show_fem(rec_img, [1 0 0]);
-    set(gca, 'YDir', 'reverse'); % for video alignment
-    drawnow();
+        f = show_fem(rec_img, [1 0 0]);
+        axis off
+    set(gcf, 'color', 'w', 'WindowState', 'fullscreen');
+    % colorbar('delete')
 
-    pause();
+
+        drawnow();
 end
+
+% % Discrete mode: given baselines
+% while 1
+%     flush(device);
+%     fprintf("Collecting baseline...\n");
+%     readline(device);
+%     temp = split(readline(device), ",");
+%     for j = 1:360
+%         if contains(char(temp(j)), 'C')
+%             fprintf("Baseline Clipped\n");
+%             unclipped = char(temp(j));
+%             unclipped = unclipped(1:end-1);
+%             baseline(j) = str2num(unclipped);
+%         else
+%             baseline(j) = str2num(temp(j));
+%         end
+%     end
+% 
+%     pause();
+% 
+%     flush(device);
+%     fprintf("Collecting Data...\n");
+%     readline(device);
+%     temp = split(readline(device), ",");
+%     for j = 1:360
+%         if contains(char(temp(j)), 'C')
+%             fprintf("Data Clipped\n");
+%             unclipped = char(temp(j));
+%             unclipped = unclipped(1:end-1);
+%             data(j) = str2num(unclipped);
+%         else
+%             data(j) = str2num(temp(j));
+%         end
+%     end
+% 
+%     rec_img= inv_solve(inv2d, baseline.', data.');
+% 
+%     upperlimit = 0.00015; % Cut colorbar at zero
+%     if max(rec_img.elem_data) < upperlimit
+%         rec_img.calc_colours.ref_level = upperlimit/2;
+%         rec_img.calc_colours.clim = upperlimit/2;
+%     end
+%     rec_img.elem_data = max(rec_img.elem_data, 0);
+% 
+% 
+% 
+%     f = show_fem(rec_img, [1 0 0]);
+%     % set(gca, 'YDir', 'reverse', 'XDir', 'reverse'); % for video alignment
+%     drawnow();
+% 
+%     pause();
+% end
 
 
 clear device

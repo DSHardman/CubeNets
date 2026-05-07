@@ -7,7 +7,7 @@ load("Cube"+string(n_elec)+"Locations"+suffix+".mat");
 % load("Data/Extracted"+string(n_elec)+".mat");
 load("Data/AmodoRandoms/AmodoExtracted.mat");
 
-for i = 355:360
+for i = 290:360
     subplot(2,1,1);
     imshow(I);
     hold on
@@ -18,13 +18,17 @@ for i = 355:360
     if n_elec == 6
         scatter(responseobject.positions(:,1), -responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
     elseif n_elec == 24
-        scatter(responseobject.positions(:,1), responseobject.positions(:,2), 30, abs(responseobject.responses(:, i)), 'filled');
+        % scatter(responseobject.positions(:,1), responseobject.positions(:,2), 30, abs(responseobject.responses(:, i)), 'filled');
+        interpolatedcube(responseobject, i);
+        colormap cool
     end
 
     % set(gcf, 'color', 'w', 'position', [946    98   462   730]);
     set(gcf, 'color', 'w');
     sgtitle(string(i));
-    colorbar();
+    % colorbar();
+    axis equal
+    colorbar off
 
     pause();
     clf
