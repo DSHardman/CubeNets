@@ -1,12 +1,12 @@
 %% Part 1: measurement ratios
 y = [17.6 14.9 0.5; 13.3 14.9 0.14];
 bar(categorical({'A', 'B'}), y,'stacked');
-colororder("earth")
+colororder("sail")
 set(gca, "linewidth", 2, "Fontsize", 15);
 box off
-set(gcf, 'color', 'w');
+set(gcf, 'color', 'w', 'position', [700 165 422 620]);
 ylabel("Resistance (k\Omega)");
-legend({"X_1 Connection"; "X_2 Connection"; "Surface Measurement"});
+legend({"X_1 Discrete"; "X_2 Discrete"; "Continuum"});
 legend boxoff
 
 return
@@ -48,7 +48,7 @@ end
 
 axis equal
 axis off
-set(gcf, 'color', 'w', 'position', [1     1   868   719]);
+set(gcf, 'color', 'w', 'position', [325 138 868 719]);
 
 plot(polyshape([-0.5 1.5 1.5 3.5 3.5 1.5 1.5 -0.5 -0.5 -2.5 -2.5 -0.5 -0.5],...
     [-0.5 -0.5 3.5 3.5 5.5 5.5 7.5 7.5 5.5 5.5, 3.5 3.5 -0.5]), 'facecolor', 'none');

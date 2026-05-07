@@ -134,7 +134,7 @@ end
 
 %% Solve forward homogeneous model
 sim_img= mk_image(fmdl,1);
-homo_c = 0.1;
+homo_c = 0.7;
 for j = 1:length(sim_img.elem_data)
     sim_img.elem_data(j) = homo_c;
 end
@@ -143,7 +143,7 @@ sim_img.fwd_solve.get_all_meas = 1;
 vh = fwd_solve(sim_img);
 
 %% Add inclusions, solve forward, and plot
-inclusion_c = 0.7;
+inclusion_c = 0.3;
 location1 = [0.6 -0.2]; location2 = [-1.5 0]; radius = 0.15;
 for i = 1:length(fmdl.elems)
     corners = [fmdl.nodes(fmdl.elems(i, 1), :);...
@@ -177,28 +177,38 @@ for i = 1:size(vh.volt, 2)
     end
 end
 
+% channels 49 and 4 used in simulation figure
+channel = 49;
+
 sim_img.fwd_model.mdl_slice_mapper.npx = 64;
 sim_img.fwd_model.mdl_slice_mapper.npy = 64;
 PLANE= [inf,inf,0];
 sim_img.fwd_model.mdl_slice_mapper.level = PLANE;
 
 subplot(2,2,2);
+plot(polyshape([-2 0 0 1 1 2 2 1 1 0 0 -2 -2],...
+    [-0.5 -0.5 -1.5 -1.5 -0.5 -0.5 0.5 0.5 1.5 1.5 0.5 0.5 -0.5]), 'facecolor', 'none');
+hold on
+scatter([-1.75:0.5:1.75 -1.75:0.5:1.75 0.25 0.75 0.25 0.75 0.25 0.75 0.25 0.75],...
+    [-0.25*ones([1, 8]) 0.25*ones([1, 8]) -1.25 -1.25 -0.75 -0.75 0.75 0.75 1.25 1.25],...
+    20, 'green', 'filled');
 q = show_current(sim_img, vh.volt(:,channel));
 quiver(q.xp,q.yp, q.xc,q.yc,5, 'b');
 axis equal;
 xlim([-2 2]);
 ylim([-1.5 1.5]);
 box off; axis off;
-title("Channel " + string(channel));
+% title("Channel " + string(channel));
 
 %% Plot measurements
 subplot(2,2,3);
-line([channel channel], [0 5], 'color', 'k', 'LineStyle', '--');
+% line([channel channel], [0 5], 'color', 'k', 'LineStyle', '--');
 hold on;
 for i = 1:5
-    plot([1+(i-1)*72:32+(i-1)*72], abs(vc.meas(1+(i-1)*72:32+(i-1)*72)), 'color', 'b');
-    plot([33+(i-1)*72:72+(i-1)*72], abs(vc.meas(33+(i-1)*72:72+(i-1)*72)), 'color', 'r');
+    plot([1+(i-1)*72:32+(i-1)*72], abs(vc.meas(1+(i-1)*72:32+(i-1)*72)), 'color', 'b', 'linewidth', 2);
+    plot([33+(i-1)*72:72+(i-1)*72], abs(vc.meas(33+(i-1)*72:72+(i-1)*72)), 'color', 'b', 'linewidth', 2);
 end
+set(gca, 'linewidth', 2, 'fontsize', 15);
 xlim([1 360]);
 box off;
 
@@ -219,7 +229,7 @@ rec_img= inv_solve(inv2d, vh.meas, vc.meas);
 
 subplot(2,2,4);
 f = show_fem(rec_img, [1 0 0]); axis off;
-
+colorbar off;
 
 %% Plot actual data, if board attached
 clear device
