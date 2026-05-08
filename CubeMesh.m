@@ -263,7 +263,10 @@ figure();
 
 
 % Continuous mode: initial baseline
-while 1
+% while 1
+alldata = zeros([150, 360]);
+alldata(1,:) = baseline;
+for i = 1:150
         % flush(device);
         % while length(temp) ~= 360
         %     temp = split(readline(device),",");
@@ -279,7 +282,8 @@ while 1
                 data(j) = str2num(temp(j));
             end
         end
-
+        
+        alldata(i+1, :) = data;
         baselinebuffer = [baselinebuffer(2:4, :); data];
 
         rec_img= inv_solve(inv2d, baselinebuffer(1,:).', data.');
@@ -294,7 +298,9 @@ while 1
 
         f = show_fem(rec_img, [1 0 0]);
         axis off
-    set(gcf, 'color', 'w', 'WindowState', 'fullscreen');
+        title(string(i+1));
+    % set(gcf, 'color', 'w', 'WindowState', 'fullscreen');
+    set(gcf, 'color', 'w');
     % colorbar('delete')
 
 

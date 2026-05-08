@@ -3,8 +3,8 @@
 
 <svg
    width="342.65762mm"
-   height="263.98907mm"
-   viewBox="0 0 342.65762 263.98907"
+   height="258.63086mm"
+   viewBox="0 0 342.65762 258.63085"
    version="1.1"
    id="svg1777"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      showborder="false"
-     inkscape:zoom="0.66368547"
-     inkscape:cx="655.43095"
-     inkscape:cy="601.94176"
-     inkscape:window-width="2400"
-     inkscape:window-height="1261"
-     inkscape:window-x="2391"
+     inkscape:zoom="0.4692965"
+     inkscape:cx="594.50689"
+     inkscape:cy="433.62778"
+     inkscape:window-width="1920"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -121,7 +121,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-33.622173,55.579842)">
+     transform="translate(-33.622173,-39.601364)">
     <g
        clip-path="url(#clip0-8)"
        transform="matrix(0.3178734,0,0,0.3178734,-250.73654,44.068184)"
@@ -216,17 +216,17 @@
        width="331.6832"
        height="83.319458"
        x="34.644947"
-       y="-55.079842" />
+       y="214.41278" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.118px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e30000;fill-opacity:1;stroke:none;stroke-width:0.421583;stroke-opacity:1"
-       x="94.336472"
-       y="-10.621359"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.47607px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e30000;fill-opacity:1;stroke:none;stroke-width:0.353169;stroke-opacity:1"
+       x="58.152351"
+       y="258.41306"
        id="text5743"><tspan
          sodipodi:role="line"
          id="tspan5741"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.118px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e30000;fill-opacity:1;stroke:none;stroke-width:0.421583;stroke-opacity:1"
-         x="94.336472"
-         y="-10.621359">High-level applications beyond cubes</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.47607px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#e30000;fill-opacity:1;stroke:none;stroke-width:0.353169;stroke-opacity:1"
+         x="58.152351"
+         y="258.41306">High-level speculation: instant sensorization of 3D surfaces</tspan></text>
   </g>
 </svg>
