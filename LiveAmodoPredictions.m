@@ -79,7 +79,7 @@ for i = 1:n
     % Plot prediction
     scatter(targetpositions(:,1), targetpositions(:,2), 150, sum, 'filled');
     sum = max(sum, 0);
-    clim([0 max(0.03, max(sum))]);
+    % clim([0 max(0.03, max(sum))]);
     colorbar
     title(string(i));
 

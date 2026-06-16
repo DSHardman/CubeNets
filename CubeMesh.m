@@ -289,15 +289,27 @@ for i = 1:150
         rec_img= inv_solve(inv2d, baselinebuffer(1,:).', data.');
         % rec_img= inv_solve(inv2d, baseline.', data.');
 
-        upperlimit = 0.00015; % Cut colorbar at zero
+        % rec_img.calc_colours.clim = 0.00015;
+
+        rec_img.elem_data = -rec_img.elem_data;
+        upperlimit = 0.0003; % Cut colorbar at zero
+        rec_img.calc_colours.ref_level = upperlimit/2;
+        rec_img.calc_colours.clim = upperlimit/2;
         if max(rec_img.elem_data) < upperlimit
             rec_img.calc_colours.ref_level = upperlimit/2;
             rec_img.calc_colours.clim = upperlimit/2;
         end
-        rec_img.elem_data = max(rec_img.elem_data, 0);
+
+        % rec_img.elem_data = max(rec_img.elem_data, 0);
+        % upperlimit = 0.00015; % Cut colorbar at zero
+        % if max(rec_img.elem_data) < upperlimit
+        %     rec_img.calc_colours.ref_level = 0;
+        %     rec_img.calc_colours.clim = upperlimit;
+        % end
 
         f = show_fem(rec_img, [1 0 0]);
         axis off
+        % plot(data); ylim([0 0.04])
         title(string(i+1));
     % set(gcf, 'color', 'w', 'WindowState', 'fullscreen');
     set(gcf, 'color', 'w');
