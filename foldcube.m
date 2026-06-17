@@ -77,5 +77,7 @@ function foldcube(responseobject, response, visiblesides)
     axis equal
     axis off
     set(gcf, 'color', 'w')
-    view(3)
+    % view(3)
+    % view([200 30]);
+    clim([min(min(responseobject.responses(:, :))) max(max(responseobject.responses(:, :)))/1.2])
 end

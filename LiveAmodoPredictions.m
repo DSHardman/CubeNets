@@ -84,9 +84,9 @@ for i = 1:n
     title(string(i));
 
     hold on
-    % if mean(sum) > 1e-3
-    %     scatter(prediction(1), prediction(2), 200, 'm', 'filled');
-    % end
+    if mean(sum) > 1e-3
+        scatter(prediction(1), prediction(2), 200, 'm', 'filled');
+    end
     axis off
     set(gca, 'XDir', 'reverse', 'YDir', 'reverse');
     set(gcf, 'color', 'w');

@@ -5,16 +5,18 @@ device.Timeout = 25;
 baselines = zeros([39, 360]);
 datas = zeros([39, 360]);
 
-for i = 1:39
+for i = 1:12
     fprintf("Baseline...\n");
     pause();
-    baseline = readamodo(device, 5);
+    baseline = readamodo(device, 1);
     fprintf("Stimulus...\n");
     pause();
-    data = readamodo(device, 5);
+    data = readamodo(device, 1);
 
-    rec_img= inv_solve(inv2d, data.', baseline.');
-    f = show_fem(rec_img, [1 0 0]);
+    plotWAMScube(data-baseline);
+    % rec_img= inv_solve(inv2d, data.', baseline.');
+    % f = show_fem(rec_img, [1 0 0]);
+    % eidorsto3d(rec_img, [1 1 1 1 1 1]);
 
     baselines(i, :) = baseline;
     datas(i, :) = data;
@@ -26,7 +28,7 @@ function data = readamodo(device, n)
     end
     flush(device); readline(device);
     data = zeros([1 360]);
-    for i = 1:1
+    for i = 1:n
         temp = split(readline(device), ",");
         for j = 1:360
             if contains(char(temp(j)), 'C')
