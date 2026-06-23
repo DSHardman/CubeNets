@@ -53,18 +53,48 @@ def main():
     # Random probing at 3 mm
     depth = 3  # In mm
 
-    Ender.write(str.encode("G1 Z" + str(Cornerposition[2] + retractheight) + " F400\r\n"))
-    waitforposition()
+    for i in range(9):
+        Ender.write(str.encode("G1 X0 Y0 Z" + str(3*retractheight) + " F400\r\n"))
+        waitforposition()
+        time.sleep(15)
 
-    x = 0
-    y = 0
-    Ender.write(str.encode("G1 X "+str(Cornerposition[0]+x)+" Y "+str(Cornerposition[1]+y)+" F800\r\n"))
-    waitforposition()
+        Ender.write(str.encode("G1 X0 Y0 F800\r\n"))
+        waitforposition()
+        takereading(depth)
 
-    takereading(depth)
+        Ender.write(str.encode("G1 X10 Y0 F800\r\n"))
+        waitforposition()
+        takereading(depth)
 
-    time.sleep(waittime)
+        Ender.write(str.encode("G1 X10 Y10 F800\r\n"))
+        waitforposition()
+        takereading(depth)
 
+        Ender.write(str.encode("G1 X0 Y10 F800\r\n"))
+        waitforposition()
+        takereading(depth)
+
+        Ender.write(str.encode("G1 X-10 Y10 F800\r\n"))
+        waitforposition()
+        takereading(depth)
+
+        Ender.write(str.encode("G1 X-10 Y0 F800\r\n"))
+        waitforposition()
+        takereading(depth)
+
+        Ender.write(str.encode("G1 X-10 Y-10 F800\r\n"))
+        waitforposition()
+        takereading(depth)
+
+        Ender.write(str.encode("G1 X0 Y-10 F800\r\n"))
+        waitforposition()
+        takereading(depth)
+
+        Ender.write(str.encode("G1 X10 Y-10 F800\r\n"))
+        waitforposition()
+        takereading(depth)
+
+        # Ender.write(str.encode("G1 X0 Y0 Z0 F800\r\n"))
 
 setup()
 main()

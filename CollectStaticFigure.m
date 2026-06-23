@@ -5,7 +5,8 @@ device.Timeout = 25;
 baselines = zeros([39, 360]);
 datas = zeros([39, 360]);
 
-for i = 1:12
+for i = 1:54
+    i
     fprintf("Baseline...\n");
     pause();
     baseline = readamodo(device, 1);
@@ -13,7 +14,10 @@ for i = 1:12
     pause();
     data = readamodo(device, 1);
 
-    plotWAMScube(data-baseline);
+    clf
+    plotall4(data, baseline, inv2d);
+
+    % plotWAMScube(data-baseline);
     % rec_img= inv_solve(inv2d, data.', baseline.');
     % f = show_fem(rec_img, [1 0 0]);
     % eidorsto3d(rec_img, [1 1 1 1 1 1]);

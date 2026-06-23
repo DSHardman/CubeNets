@@ -1,4 +1,4 @@
-function plotWAMScube(datab)
+function [sum, targetpositions] = plotWAMScube(datab)
 
     load("Data/AmodoRandoms/AmodoExtracted.mat");
     responses = responseobject.responses;
@@ -20,21 +20,31 @@ function plotWAMScube(datab)
     end
     
     % Prediction is brightest pixel
-    [~, ind] = sort(sum, 'descend');
+    [~, ind] = sort(abs(sum), 'descend');
     prediction = targetpositions(ind(1), :);
     
-    % Plot prediction
-    scatter(targetpositions(:,1), targetpositions(:,2), 150, sum, 'filled');
-    sum = max(sum, 0);
-    % clim([0 max(0.03, max(sum))]);
-    colorbar
-    
+    % % Plot prediction
+    % scatter(targetpositions(:,1), targetpositions(:,2), 150, sum, 'filled');
+    % sum = max(sum, 0);
+    % % clim([0 max(0.03, max(sum))]);
+    % colorbar
+    % 
+    % hold on
+    % scatter(prediction(1), prediction(2), 200, 'm', 'filled');
+    % axis off
+    % set(gca, 'XDir', 'reverse', 'YDir', 'reverse');
+    % set(gcf, 'color', 'w');
+    % hold off
+    % drawnow();
+
+    interpolatedcube(targetpositions(:,1), targetpositions(:,2), sum);
+    colorbar off
+
     hold on
-    scatter(prediction(1), prediction(2), 200, 'm', 'filled');
+    % Add ground truth and predicted touch locations
+    % scatter(testpositions(i, 1), testpositions(i, 2), 50, 'r', 'filled');
+    scatter(prediction(1), prediction(2), 50, 'm', 'filled');
     axis off
-    set(gca, 'XDir', 'reverse', 'YDir', 'reverse');
     set(gcf, 'color', 'w');
-    hold off
-    drawnow();
 
 end

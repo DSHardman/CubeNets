@@ -13,19 +13,20 @@ ranking = franking(responses, targetpositions);
 % Prediction in pink, ground truth in red
 figure();
 error = median(wamtesting(1:360, responses, targetpositions, 1))
-% sgtitle("Median error over entire test set: "+ string(error) + " mm");
+sgtitle("Median error over entire test set: "+ string(error) + " mm");
 % Note that naive mean prediction would be 29.8537 mm
-
-figure();
-rollingerror = zeros([359, 10]);
-for i = 2:360
-    i
-    for j = 1:10
-    rollingerror(i-1, j) = median(wamtesting(ranking(1:i), responses, targetpositions, 0));
-    end
-end
-plot(mean(rollingerror.'));
 return
+
+% figure();
+% rollingerror = zeros([359, 10]);
+% for i = 2:360
+%     i
+%     for j = 1:10
+%     rollingerror(i-1, j) = median(wamtesting(ranking(1:i), responses, targetpositions, 0));
+%     end
+% end
+% plot(mean(rollingerror.'));
+% return
 
 figure();
 errors = zeros([size(targetpositions, 1), 1]);
