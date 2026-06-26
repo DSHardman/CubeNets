@@ -9,11 +9,11 @@ function eresponse = eidorsto3d(rec_img, visiblesides)
     positions(:,2) = 30*(0.5-positions(:,2));
 
     % subplot(1,3,1);
-    % interpolatedcube(positions(:,1), positions(:,2), rec_img.elem_data);
-    % axis equal
-    % colorbar off
-    % set(gca, 'XDir', 'Reverse');
-    % set(gca, 'YDir', 'Reverse');
+    interpolatedcube(positions(:,1), positions(:,2), rec_img.elem_data);
+    axis equal
+    colorbar off
+    set(gca, 'XDir', 'Reverse');
+    set(gca, 'YDir', 'Reverse');
     
     eresponse = SkinResponse(rec_img.elem_data, nan, positions);
     % subplot(1,3,2);

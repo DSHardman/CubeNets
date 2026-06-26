@@ -15,7 +15,6 @@ figure();
 error = median(wamtesting(1:360, responses, targetpositions, 1))
 sgtitle("Median error over entire test set: "+ string(error) + " mm");
 % Note that naive mean prediction would be 29.8537 mm
-return
 
 % figure();
 % rollingerror = zeros([359, 10]);
@@ -36,8 +35,32 @@ for i = 1:size(targetpositions, 1)
     end
     errors(i) = median(wamtesting(1:360, responses, targetpositions, 0, find(1:size(targetpositions, 1)~=i), i));
 end
-scatter(targetpositions(:, 1), targetpositions(:, 2), 30, errors, 'filled');
-caxis([0 20])
+% scatter(targetpositions(:, 1), targetpositions(:, 2), 30, errors, 'filled');
+interpolatedcube(targetpositions(:, 1), targetpositions(:, 2), errors); colormap hot
+% caxis([0 20])
+
+% Median error per face
+clear faceerrors
+faceerrors{6} = [];
+for i = 1:length(errors)
+    face = returnfaces(targetpositions(i, :));
+    faceerrors{face} = [faceerrors{face}; errors(i)];
+end
+medianfaces = zeros([6, 1]);
+
+figure();
+barcols = 1/255*[233 101 0; 0 181 0; 233 14 85; 0 181 214; 233 195 85; 233 104 85];
+for i = 1:6
+    medianfaces(i) = median(faceerrors{i});
+    bar(i, medianfaces(i), 'facecolor', barcols(i, :), 'LineWidth', 2);
+    hold on
+end
+
+box off
+set(gca, 'LineWidth', 2, 'FontSize', 15);
+set(gcf, 'color', 'w', 'position', [375 355 691 288]);
+ylabel("Median Error (mm)");
+xlabel("Face");
 
 %% F-Test Ranking
 function ranking = franking(responses, targetpositions)
@@ -56,7 +79,13 @@ end
 %% Implement WAM method from Hardman et al., Tactile Perception in Hydrogel-based Robotic Skins, 2023
 function allerrors = wamtesting(combinations, responses, targetpositions, figs, traininds, testinds)
         
-    responses = tanh(normalize(responses)); % Deal with outliers
+    % responses = tanh(normalize(responses)); % Deal with outliers
+     
+    % responses = normalize(responses);
+
+    % Updated normalisation June26
+    responses = tanh(responses);
+    responses = normalize(responses.').'; 
 
     % Generate test & train sets
     if nargin == 4
@@ -87,10 +116,19 @@ function allerrors = wamtesting(combinations, responses, targetpositions, figs, 
             end
         end
 
-        % Prediction is the brightest pixel
+        % % Prediction is the brightest pixel
         [~, ind] = sort(sum, 'descend');
-        prediction = [targetpositions(ind(1),1),...
-                        targetpositions(ind(1),2)];
+        prediction = targetpositions(ind(1),:);
+
+        % % Prediction is the brightest pixel on the same face
+        % face = returnfaces(testpositions(i, :));
+        % [~, ind] = sort(sum, 'descend');
+        % for j = 1:size(targetpositions, 1)
+        %     if returnfaces(targetpositions(ind(j), :)) == face
+        %         break
+        %     end
+        % end
+        % prediction = targetpositions(ind(j), :);
 
         % n = min(6, size(responses, 2));
         % prediction = [mean(targetpositions(ind(1:n), 1)),...
@@ -121,4 +159,23 @@ function allerrors = wamtesting(combinations, responses, targetpositions, figs, 
     end
     % error = error/size(testresponses, 1); % calculate mean
 
+end
+
+function faces = returnfaces(positions)
+    faces = zeros([size(positions, 1), 1]);
+    for i = 1:size(positions, 1)
+        if positions(i, 1) < 30
+            faces(i) = 1;
+        elseif positions(i, 1) > 90
+            faces(i) = 6;
+        elseif positions(i, 1) >= 60
+            faces(i) = 5;
+        elseif positions(i, 2) > 30
+            faces(i) = 2;
+        elseif positions(i, 2) < 0
+            faces(i) = 4;
+        else
+            faces(i) = 3;
+        end
+    end
 end

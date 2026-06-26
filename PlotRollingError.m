@@ -12,7 +12,7 @@ x = 2:360;
 fill([x, flip(x)], [avg_data+std_data, flip(avg_data-std_data)], [0.6 0.6 0.6], 'EdgeColor','none')
 hold on
 plot(x, smooth(avg_data), 'k', 'linewidth', 2);
-plot([0 360], [4.8 4.8], 'linewidth', 1, 'linestyle', '--', 'color', 'k');
+plot([0 360], [2.8 2.8], 'linewidth', 1, 'linestyle', '--', 'color', 'k');
 
 box off
 set(gca, 'color', 'w', 'fontsize', 15, 'linewidth', 2);

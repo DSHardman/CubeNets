@@ -3,7 +3,14 @@ function [sum, targetpositions] = plotWAMScube(datab)
     load("Data/AmodoRandoms/AmodoExtracted.mat");
     responses = responseobject.responses;
     targetpositions = responseobject.positions;
-    responses = tanh(normalize(responses)); % Deal with outliers
+
+
+    % responses = tanh(normalize(responses)); % Deal with outliers
+
+    % To try:
+    responses = normalize(tanh(responses).').';
+    datab = normalize(tanh(datab).').';
+
     % Generate test & train sets
     traininds = randperm(length(targetpositions));
     responses = responses(traininds, :);

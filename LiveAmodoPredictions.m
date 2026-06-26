@@ -5,7 +5,11 @@ load("Data/AmodoRandoms/AmodoExtracted.mat");
 responses = responseobject.responses;
 targetpositions = responseobject.positions;
 combinations = franking(responses, targetpositions);
-responses = tanh(normalize(responses)); % Deal with outliers
+% responses = tanh(normalize(responses)); % Deal with outliers
+% Updated normalisation June26
+responses = tanh(responses);
+responses = normalize(responses.').'; 
+
 % Generate test & train sets
 traininds = randperm(length(targetpositions));
 responses = responses(traininds, :);
@@ -15,7 +19,7 @@ targetpositions = targetpositions(traininds, :);
 %% Connect to board and set baseline
 
 clear device
-device = serialport("COM11",9600);
+device = serialport("COM13",9600);
 device.Timeout = 25;
 
 flush(device); readline(device);
@@ -58,6 +62,9 @@ for i = 1:n
     baseline = mean(baselineframes);
     datab = data - baseline;
     baselineframes = [baselineframes(2:5, :); data];
+
+    % To try:
+    datab = normalize(tanh(datab).').';
 
     % Realtime WAMs prediction
     sum = zeros([size(responses, 1), 1]);

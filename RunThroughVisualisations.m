@@ -1,9 +1,9 @@
 n_elec = 24;
 suffix = "Flat";
 
-I = imread("Cube"+string(n_elec)+".jpg");
-load("ElectrodeOrder"+string(n_elec)+suffix+".mat");
-load("Cube"+string(n_elec)+"Locations"+suffix+".mat");
+I = imread("Data/Cube"+string(n_elec)+".jpg");
+load("Data/ElectrodeOrder"+string(n_elec)+suffix+".mat");
+load("Data/Cube"+string(n_elec)+"Locations"+suffix+".mat");
 % load("Data/Extracted"+string(n_elec)+".mat");
 load("Data/AmodoRandoms/AmodoExtracted.mat");
 
