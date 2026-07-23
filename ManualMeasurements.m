@@ -37,7 +37,10 @@ circles = [1, 0, 0.14;
     0 7 0.51;
     1 7 0.50];
 
-scatter(circles(:, 1), circles(:,2), 500*circles(:,3), 'k', 'filled');
+% circles(:, 3) = [28 30 26 32 28 34 30 38 39 35 35 26 24 34 31 29 27 25 23 30 28 30 32].';
+
+scalingfactor = 500; % 500 in paper's figure
+scatter(circles(:, 1), circles(:,2), scalingfactor*circles(:,3), 'k', 'filled');
 hold on
 scatter(0, 0, 100, 'kx', 'linewidth', 2);
 

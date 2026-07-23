@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      showborder="false"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="873.98398"
-     inkscape:cy="521.84481"
-     inkscape:window-width="1920"
-     inkscape:window-height="1111"
-     inkscape:window-x="-9"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="797.61645"
+     inkscape:cy="1207.0313"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -4969,7 +4969,7 @@
     <g
        id="g4095-6"
        clip-path="url(#clipPath4097-0)"
-       transform="matrix(-0.51027563,0,0,0.51027563,-210.57364,-152.55257)"
+       transform="matrix(-0.51027563,0,0,0.51027563,-204.21263,-152.55257)"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200">
@@ -5549,7 +5549,7 @@
     <circle
        style="font-variation-settings:'wght' 700;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.0393337;stroke-miterlimit:10;stroke-dasharray:none"
        id="path4655-3"
-       cx="149.49097"
+       cx="143.12996"
        cy="1.6396794"
        r="1.3305516"
        transform="scale(-1,1)"
@@ -5559,7 +5559,7 @@
     <circle
        style="font-variation-settings:'wght' 700;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.0393337;stroke-miterlimit:10;stroke-dasharray:none"
        id="path4655-7-1"
-       cx="157.12732"
+       cx="150.76631"
        cy="9.2975082"
        r="1.3305516"
        transform="scale(-1,1)"
@@ -5569,7 +5569,7 @@
     <circle
        style="font-variation-settings:'wght' 700;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.0393337;stroke-miterlimit:10;stroke-dasharray:none"
        id="path4655-7-9-1"
-       cx="164.77431"
+       cx="158.4133"
        cy="1.6397157"
        r="1.3305516"
        transform="scale(-1,1)"
@@ -5579,7 +5579,7 @@
     <circle
        style="font-variation-settings:'wght' 700;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.0393337;stroke-miterlimit:10;stroke-dasharray:none"
        id="path4655-5-4"
-       cx="157.14877"
+       cx="150.78777"
        cy="1.6396794"
        r="1.3305516"
        transform="scale(-1,1)"
@@ -5589,7 +5589,7 @@
     <text
        xml:space="preserve"
        style="font-size:6.6345px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.276437;stroke-opacity:1"
-       x="146.24454"
+       x="139.88353"
        y="43.972958"
        id="text13376-4"
        transform="scale(-1,1)"
@@ -5599,12 +5599,12 @@
          sodipodi:role="line"
          id="tspan13374-1"
          style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.276437;stroke-opacity:1"
-         x="146.24454"
+         x="139.88353"
          y="43.972958">I</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:6.6345px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;fill:#0000ff;fill-opacity:1;stroke-width:0.276437"
-       x="130.28235"
+       x="123.92133"
        y="35.679832"
        id="text13376-1-0"
        transform="scale(-1,1)"
@@ -5614,17 +5614,17 @@
          sodipodi:role="line"
          id="tspan13374-5-2"
          style="fill:#0000ff;fill-opacity:1;stroke-width:0.276437"
-         x="130.28235"
+         x="123.92133"
          y="35.679832" /><tspan
          sodipodi:role="line"
          style="fill:#0000ff;fill-opacity:1;stroke-width:0.276437"
-         x="130.28235"
+         x="123.92133"
          y="43.972958"
          id="tspan16345-4">V</tspan></text>
     <circle
        style="font-variation-settings:'wght' 700;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.522402;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path17957-8"
-       cx="132.22926"
+       cx="125.86825"
        cy="41.617851"
        r="3.8527989"
        transform="scale(-1,1)"
@@ -5634,7 +5634,7 @@
     <circle
        style="font-variation-settings:'wght' 700;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.522402;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
        id="path17957-5-6"
-       cx="147.15807"
+       cx="140.79706"
        cy="41.617851"
        r="3.8527997"
        transform="scale(-1,1)"
@@ -5643,14 +5643,14 @@
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#0000ff;stroke-width:0.335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -137.47049,35.530731 v 0.79953 h 5.21487 v 1.276863"
+       d="m -131.10948,35.530731 v 0.79953 h 5.21487 v 1.276863"
        id="path20695"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#0000ff;stroke-width:0.335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -132.24368,45.49546 v 0.716003 h -6.25453 V 35.50686"
+       d="m -125.88267,45.49546 v 0.716003 h -6.25453 V 35.50686"
        id="path20697"
        sodipodi:nodetypes="cccc"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
@@ -5658,7 +5658,7 @@
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -139.41105,35.546717 v 10.81781 h -7.67872 v -0.818502"
+       d="m -133.05004,35.546717 v 10.81781 h -7.67872 v -0.818502"
        id="path20907"
        sodipodi:nodetypes="cccc"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
@@ -5666,14 +5666,14 @@
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.335;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -142.54161,35.555152 v 0.961951 h -4.60723 v 1.080085"
+       d="m -136.1806,35.555152 v 0.961951 h -4.60723 v 1.080085"
        id="path21117"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <g
        id="g22080"
-       transform="matrix(0.23666979,0,0,0.23666979,-191.82632,51.040629)"
+       transform="matrix(0.23666979,0,0,0.23666979,-185.46531,51.040629)"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200">
@@ -9165,7 +9165,7 @@
          id="g2478"
          transform="matrix(0.25487639,0,0,0.25487639,-61.277591,-192.35737)">
         <path
-           d="m 219.59944,78.302907 v 15.02448 h 39.99472 v -15.02448 z"
+           d="m 286.55592,78.302907 v 15.02448 h 39.99472 v -15.02448 z"
            style="fill:#104280;fill-opacity:1;fill-rule:evenodd;stroke:none"
            id="path2480" />
       </g>
@@ -9173,7 +9173,7 @@
          id="g2482"
          transform="matrix(0.20390111,0,0,0.20390111,-62.602947,-201.73682)">
         <path
-           d="M 280.99933,162.65933 V 143.8787 h 49.99341 v 18.78063 z"
+           d="M 364.69493,162.65933 V 143.8787 h 49.99341 v 18.78063 z"
            style="fill:none;stroke:#212121;stroke-width:0.833333;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
            id="path2484" />
       </g>
@@ -9181,7 +9181,7 @@
          id="g2486"
          transform="matrix(0.25487639,0,0,0.25487639,-61.277591,-192.35737)">
         <path
-           d="m 219.59944,47.164238 v 15.024479 h 39.99472 V 47.164238 Z"
+           d="m 286.55592,47.164238 v 15.024479 h 39.99472 V 47.164238 Z"
            style="fill:#54b6ff;fill-opacity:1;fill-rule:evenodd;stroke:none"
            id="path2488" />
       </g>
@@ -9189,7 +9189,7 @@
          id="g2490"
          transform="matrix(0.20390111,0,0,0.20390111,-62.602947,-201.73682)">
         <path
-           d="m 280.99933,123.73598 v -18.78062 h 49.99341 v 18.78062 z"
+           d="m 364.69493,123.73598 v -18.78062 h 49.99341 v 18.78062 z"
            style="fill:none;stroke:#212121;stroke-width:0.833333;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
            id="path2492" />
       </g>
@@ -9197,7 +9197,7 @@
          id="g2494"
          transform="matrix(0.25487639,0,0,0.25487639,-61.277591,-192.35737)">
         <path
-           d="m 219.59944,17.402884 v 15.02456 h 39.99472 v -15.02456 z"
+           d="m 286.55592,17.402884 v 15.02456 h 39.99472 v -15.02456 z"
            style="fill:#ff453a;fill-opacity:1;fill-rule:evenodd;stroke:none"
            id="path2496" />
       </g>
@@ -9205,52 +9205,15 @@
          id="g2498"
          transform="matrix(0.20390111,0,0,0.20390111,-62.602947,-201.73682)">
         <path
-           d="M 280.99933,86.534318 V 67.753694 h 49.99341 v 18.780624 z"
+           d="M 364.69493,86.534318 V 67.753694 h 49.99341 v 18.780624 z"
            style="fill:none;stroke:#212121;stroke-width:0.833333;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
            id="path2500" />
       </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150413"
-         x="5.6996546"
-         y="-184.08859"
-         id="text6312-8-1-4"><tspan
-           sodipodi:role="line"
-           id="tspan6310-6-6-6"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150413"
-           x="5.6996546"
-           y="-184.08859">Continuum</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150413"
-         x="5.6996546"
-         y="-177.01422"
-         id="text6312-8-1-4-3"><tspan
-           sodipodi:role="line"
-           id="tspan6310-6-6-6-7"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150413"
-           x="5.6996546"
-           y="-177.01422">X<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub"
-   id="tspan7098">2</tspan> Discrete</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150413"
-         x="5.6996546"
-         y="-169.0777"
-         id="text6312-8-1-4-3-7"><tspan
-           sodipodi:role="line"
-           id="tspan6310-6-6-6-7-3"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150413"
-           x="5.6996546"
-           y="-169.0777">X<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29167px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub"
-   id="tspan7098-5">1</tspan> Discrete</tspan></text>
     </g>
     <text
        xml:space="preserve"
        style="font-size:6.74159px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;stroke-width:0.280899"
-       x="66.029358"
+       x="61.359055"
        y="-40.353035"
        id="text6312-8-1-4-8"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
@@ -9259,8 +9222,10 @@
          sodipodi:role="line"
          id="tspan6310-6-6-6-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.74159px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.280899"
-         x="66.029358"
-         y="-40.353035">Resistance from A<tspan
+         x="61.359055"
+         y="-40.353035">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan6164">c</tspan> Resistance from A<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan6126">2</tspan> (kΩ)</tspan></text>
     <text
@@ -9280,7 +9245,7 @@
     <text
        xml:space="preserve"
        style="font-size:5.34338px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;stroke-width:0.22264"
-       x="-168.39523"
+       x="-162.03423"
        y="185.64873"
        id="text6312-8-1-4-8-8-9"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
@@ -9289,7 +9254,7 @@
          sodipodi:role="line"
          id="tspan6310-6-6-6-8-9-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.34338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.22264"
-         x="-168.39523"
+         x="-162.03423"
          y="185.64873">Time (s)</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.559857;stroke-miterlimit:4;stroke-dasharray:none"
@@ -9358,7 +9323,7 @@
     <text
        xml:space="preserve"
        style="font-size:5.92429px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;stroke-width:0.246845"
-       x="-189.69246"
+       x="-183.33145"
        y="-22.245813"
        id="text6312-8-1-4-8-3-7"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
@@ -9367,7 +9332,7 @@
          sodipodi:role="line"
          id="tspan6310-6-6-6-8-6-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.92429px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.246845"
-         x="-189.69246"
+         x="-183.33145"
          y="-22.245813">Configuration #79</tspan></text>
     <text
        xml:space="preserve"
@@ -17738,39 +17703,39 @@
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
          x="-127.37576"
-         y="-146.43401"
+         y="-152.79501"
          id="text6312-0-5-3-2"><tspan
            sodipodi:role="line"
            id="tspan6310-7-1-4-3"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
            x="-127.37576"
-           y="-146.43401">Discrete<tspan
+           y="-152.79501">Discrete<tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub;stroke-width:0.123784"
    id="tspan10530-7-6-7-5" /></tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
          x="-88.655647"
-         y="-146.43401"
+         y="-152.79501"
          id="text6312-0-5-3-2-2"><tspan
            sodipodi:role="line"
            id="tspan6310-7-1-4-3-1"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
            x="-88.655647"
-           y="-146.43401">Discrete<tspan
+           y="-152.79501">Discrete<tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub;stroke-width:0.123784"
    id="tspan10530-7-6-7-5-4" /></tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
          x="-111.29086"
-         y="-131.28038"
+         y="-126.121"
          id="text6312-0-5-3-2-2-3"><tspan
            sodipodi:role="line"
            id="tspan6310-7-1-4-3-1-6"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
            x="-111.29086"
-           y="-131.28038">Continuum</tspan></text>
+           y="-126.121">Continuum</tspan></text>
       <g
          id="g43553">
         <rect
@@ -17804,7 +17769,7 @@
     </g>
     <g
        id="g43960"
-       transform="translate(-36.168182,148.16321)"
+       transform="translate(-36.168182,192.50322)"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200">
@@ -17833,7 +17798,7 @@
     </g>
     <g
        id="g43553-2"
-       transform="translate(3.7304696e-7,83.457367)"
+       transform="translate(3.7304696e-7,41.736594)"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200">
@@ -17857,21 +17822,21 @@
     </g>
     <path
        style="fill:none;stroke:#104280;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
-       d="m -122.49625,-95.974389 9.525,-10.649471"
+       d="m -122.49625,-51.634374 9.525,-10.649471"
        id="path48421"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#54b6ff;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-5)"
-       d="m -81.254122,-95.974388 9.525,-10.649472"
+       d="m -81.254122,-51.634373 9.525,-10.649472"
        id="path48421-7"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#ff453a;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-9)"
-       d="m -104.04905,-49.267508 9.524998,-10.649471"
+       d="m -104.04905,-90.988281 9.524998,-10.649469"
        id="path48421-4"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
@@ -17880,7 +17845,7 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
        x="-115.48503"
-       y="-111.11306"
+       y="-108.11964"
        id="text6312-0-5-3-2-2-3-7"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
@@ -17889,12 +17854,12 @@
          id="tspan6310-7-1-4-3-1-6-5"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
          x="-115.48503"
-         y="-111.11306">Mechanism 1</tspan></text>
+         y="-108.11964">Mechanism 1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
        x="-115.58907"
-       y="-65.781769"
+       y="-66.343033"
        id="text6312-0-5-3-2-2-3-7-1"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
        inkscape:export-xdpi="200"
@@ -17903,6 +17868,287 @@
          id="tspan6310-7-1-4-3-1-6-5-6"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
          x="-115.58907"
-         y="-65.781769">Mechanism 2</tspan></text>
+         y="-66.343033">Mechanism 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+       x="-242.77634"
+       y="-175.94043"
+       id="text6312-8-4-5"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-67-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+         x="-242.77634"
+         y="-175.94043">a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+       x="55.204273"
+       y="-175.94043"
+       id="text6312-8-4-5-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-67-2-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+         x="55.204273"
+         y="-175.94043">b</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+       x="-242.77634"
+       y="-23.969315"
+       id="text6312-8-4-5-7"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-67-2-34"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+         x="-242.77634"
+         y="-23.969315">c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+       x="-32.165623"
+       y="-23.969315"
+       id="text6312-8-4-5-7-7"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-67-2-34-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.150284"
+         x="-32.165623"
+         y="-23.969315">d</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="33.736622"
+       y="-172.33237"
+       id="text6312-0-5-3-2-2-3-9"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="33.736622"
+         y="-172.33237">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan10225">c</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="33.736622"
+       y="-156.81473"
+       id="text6312-0-5-3-2-2-3-9-2"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="33.736622"
+         y="-156.81473">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan8243">d1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="33.736622"
+       y="-164.75124"
+       id="text6312-0-5-3-2-2-3-9-8"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="33.736622"
+         y="-164.75124">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan7149">d2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-101.77337"
+       y="-133.58325"
+       id="text6312-0-5-3-2-2-3-9-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-101.77337"
+         y="-133.58325">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan10225-3">c</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-121.67403"
+       y="-149.22781"
+       id="text6312-0-5-3-2-2-3-9-2-5"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-8-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-121.67403"
+         y="-149.22781">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan8243-9">d1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-83.264839"
+       y="-149.22781"
+       id="text6312-0-5-3-2-2-3-9-8-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-2-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-83.264839"
+         y="-149.22781">R<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan7149-4">d2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-231.35678"
+       y="-174.52751"
+       id="text6312-0-5-3-2-2-3-9-4"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-77"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-231.35678"
+         y="-174.52751">i</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-132.64326"
+       y="-174.52751"
+       id="text6312-0-5-3-2-2-3-9-4-3"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-77-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-132.64326"
+         y="-174.52751">ii</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-32.194443"
+       y="-174.52751"
+       id="text6312-0-5-3-2-2-3-9-4-3-9"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-77-7-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-32.194443"
+         y="-174.52751">iii</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-236.30276"
+       y="57.347713"
+       id="text6312-0-5-3-2-2-3-9-4-4"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-77-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-236.30276"
+         y="57.347713">i</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-236.30276"
+       y="107.53838"
+       id="text6312-0-5-3-2-2-3-9-4-3-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-77-7-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-236.30276"
+         y="107.53838">ii</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+       x="-236.30276"
+       y="152.44685"
+       id="text6312-0-5-3-2-2-3-9-4-3-9-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan6310-7-1-4-3-1-6-0-77-7-5-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.53336px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.123784"
+         x="-236.30276"
+         y="152.44685">iii</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.34338px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;stroke-width:0.22264"
+       x="-166.17366"
+       y="-188.03064"
+       id="text6312-8-1-4-8-8-9-3"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-6-6-8-9-2-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.34338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.22264"
+         x="-166.17366"
+         y="-188.03064">ΔV (V)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.34338px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;stroke-width:0.22264"
+       x="-121.4904"
+       y="-188.03064"
+       id="text6312-8-1-4-8-8-9-3-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-6-6-8-9-2-7-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.34338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.22264"
+         x="-121.4904"
+         y="-188.03064">ΔV (V)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.34338px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, Normal';font-variant-ligatures:none;stroke-width:0.22264"
+       x="-76.617805"
+       y="-188.03064"
+       id="text6312-8-1-4-8-8-9-3-9"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Manuals.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan6310-6-6-6-8-9-2-7-41"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.34338px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.22264"
+         x="-76.617805"
+         y="-188.03064">ΔV (V)</tspan></text>
   </g>
 </svg>

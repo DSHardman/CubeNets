@@ -8,7 +8,7 @@ PERIODS_PER_MEASUREMENT = 1
 TX_GAIN = 16  # 50k 16 32, 10k & 5k 8 8, 1k 16 16, 2k 8 16
 RX_GAIN = 16
 
-configs = loadmat("Cube24Combos.mat")
+configs = loadmat("../Data/Cube24Combos.mat")
 configs = configs["configs"]
 
 devices = eit.get_connected_devices()

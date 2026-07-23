@@ -9,7 +9,7 @@ function [sum, targetpositions] = plotWAMScube(datab)
 
     % To try:
     responses = normalize(tanh(responses).').';
-    datab = normalize(tanh(datab).').';
+    % datab = normalize(tanh(datab).').';
 
     % Generate test & train sets
     traininds = randperm(length(targetpositions));
@@ -27,7 +27,7 @@ function [sum, targetpositions] = plotWAMScube(datab)
     end
     
     % Prediction is brightest pixel
-    [~, ind] = sort(abs(sum), 'descend');
+    [~, ind] = sort(sum, 'descend');
     prediction = targetpositions(ind(1), :);
     
     % % Plot prediction

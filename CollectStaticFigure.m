@@ -15,9 +15,14 @@ for i = 1:54
     data = readamodo(device, 1);
 
     clf
-    plotall4(data, baseline, inv2d);
+    % plotall4(data, baseline, inv2d);
+    % hold off
+    % plot(baseline);
+    % hold on
+    % plot(data);
+    % hold off
 
-    % plotWAMScube(data-baseline);
+    plotWAMScube(data-baseline);
     % rec_img= inv_solve(inv2d, data.', baseline.');
     % f = show_fem(rec_img, [1 0 0]);
     % eidorsto3d(rec_img, [1 1 1 1 1 1]);

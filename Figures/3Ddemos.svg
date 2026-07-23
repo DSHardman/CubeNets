@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.5"
-     inkscape:cx="927"
+     inkscape:cx="1237"
      inkscape:cy="495"
      inkscape:window-width="2400"
      inkscape:window-height="1261"
@@ -67,10 +67,10 @@
     </marker>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="453.0316 : 490.05634 : 1"
+       inkscape:vp_x="463.08577 : 461.48134 : 1"
        inkscape:vp_y="0 : -2052.5336 : 0"
-       inkscape:vp_z="-366.95458 : 511.01027 : 1"
-       inkscape:persp3d-origin="28.071411 : 713.55126 : 1"
+       inkscape:vp_z="-356.90041 : 482.43527 : 1"
+       inkscape:persp3d-origin="38.125578 : 684.97626 : 1"
        id="perspective17444" />
     <clipPath
        id="clip0">
@@ -672,43 +672,43 @@
          id="path17458"
          style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-width:5.93457;stroke-linejoin:round"
          inkscape:box3dsidetype="11"
-         d="m 92.332626,-59.940165 -13.170738,9.204304 v -16.252688 l 13.170738,-8.587652 z"
-         points="79.161888,-50.735861 79.161888,-66.988549 92.332626,-75.576201 92.332626,-59.940165 " />
+         d="m 102.38679,-31.365165 -13.170734,9.204305 v -16.252688 l 13.170734,-8.587653 z"
+         points="89.216056,-22.16086 89.216056,-38.413548 102.38679,-47.001201 102.38679,-31.365165 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path17448"
          style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-width:5.93457;stroke-linejoin:round"
          inkscape:box3dsidetype="6"
-         d="m 107.14367,-52.189406 v -16.112526 l -14.811044,-7.274269 v 15.636036 z"
-         points="107.14367,-68.301932 92.332626,-75.576201 92.332626,-59.940165 107.14367,-52.189406 " />
+         d="m 117.19783,-23.614405 v -16.112527 l -14.81104,-7.274269 v 15.636036 z"
+         points="117.19783,-39.726932 102.38679,-47.001201 102.38679,-31.365165 117.19783,-23.614405 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path17450"
          style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-width:5.93457;stroke-linejoin:round"
          inkscape:box3dsidetype="5"
-         d="m 107.14367,-52.189406 -12.985795,9.811576 -14.995987,-8.358031 13.170738,-9.204304 z"
-         points="94.157875,-42.37783 79.161888,-50.735861 92.332626,-59.940165 107.14367,-52.189406 " />
+         d="m 117.19783,-23.614405 -12.98579,9.811575 -14.995984,-8.35803 13.170734,-9.204305 z"
+         points="104.21204,-13.80283 89.216056,-22.16086 102.38679,-31.365165 117.19783,-23.614405 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path17456"
          style="fill:#4b4b47;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5.93457;stroke-linejoin:round"
          inkscape:box3dsidetype="13"
-         d="m 107.14367,-68.301932 -12.985795,9.155979 -14.995987,-7.842596 13.170738,-8.587652 z"
-         points="94.157875,-59.145953 79.161888,-66.988549 92.332626,-75.576201 107.14367,-68.301932 " />
+         d="m 117.19783,-39.726932 -12.98579,9.155979 -14.995984,-7.842595 13.170734,-8.587653 z"
+         points="104.21204,-30.570953 89.216056,-38.413548 102.38679,-47.001201 117.19783,-39.726932 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path17454"
          style="fill:#8c8b84;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5.93457;stroke-linejoin:round"
          inkscape:box3dsidetype="14"
-         d="m 94.157875,-42.37783 v -16.768123 l -14.995987,-7.842596 v 16.252688 z"
-         points="94.157875,-59.145953 79.161888,-66.988549 79.161888,-50.735861 94.157875,-42.37783 " />
+         d="M 104.21204,-13.80283 V -30.570953 L 89.216056,-38.413548 V -22.16086 Z"
+         points="104.21204,-30.570953 89.216056,-38.413548 89.216056,-22.16086 104.21204,-13.80283 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path17452"
          style="fill:#42423e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5.93457;stroke-linejoin:round"
          inkscape:box3dsidetype="3"
-         d="m 107.14367,-52.189406 -12.985795,9.811576 v -16.768123 l 12.985795,-9.155979 z"
-         points="94.157875,-42.37783 94.157875,-59.145953 107.14367,-68.301932 107.14367,-52.189406 " />
+         d="m 117.19783,-23.614405 -12.98579,9.811575 v -16.768123 l 12.98579,-9.155979 z"
+         points="104.21204,-13.80283 104.21204,-30.570953 117.19783,-39.726932 117.19783,-23.614405 " />
     </g>
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
@@ -1644,7 +1644,7 @@
     <text
        xml:space="preserve"
        style="font-size:7.50037px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;stroke-width:0.375018"
-       x="325.56812"
+       x="551.52228"
        y="22.894781"
        id="text3054-4-4"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\3Ddemos.png"
@@ -1653,12 +1653,12 @@
          sodipodi:role="line"
          id="tspan3052-3-3"
          style="font-weight:bold;stroke-width:0.375018"
-         x="325.56812"
+         x="551.52228"
          y="22.894781">CAD demo</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.50037px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;stroke-width:0.375018"
-       x="324.65973"
+       x="550.61389"
        y="47.431694"
        id="text3054-4-4-1"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\3Ddemos.png"
@@ -1667,12 +1667,12 @@
          sodipodi:role="line"
          id="tspan3052-3-3-7"
          style="font-weight:bold;stroke-width:0.375018"
-         x="324.65973"
+         x="550.61389"
          y="47.431694">Evidence of working WAMs</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.50037px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;stroke-width:0.375018"
-       x="325.62439"
+       x="551.57855"
        y="68.437195"
        id="text3054-4-4-8"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\3Ddemos.png"
@@ -1681,17 +1681,17 @@
          sodipodi:role="line"
          id="tspan3052-3-3-9"
          style="font-weight:bold;stroke-width:0.375018"
-         x="325.62439"
+         x="551.57855"
          y="68.437195">Bar graphs for classification</tspan><tspan
          sodipodi:role="line"
          style="font-weight:bold;stroke-width:0.375018"
-         x="325.62439"
+         x="551.57855"
          y="77.81266"
          id="tspan13147">between two types</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:7.50037px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;stroke-width:0.375018"
-       x="323.18701"
+       x="549.14117"
        y="107.15943"
        id="text3054-4-4-8-8"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\3Ddemos.png"
@@ -1699,12 +1699,12 @@
        inkscape:export-ydpi="200"><tspan
          sodipodi:role="line"
          style="font-weight:bold;stroke-width:0.375018"
-         x="323.18701"
+         x="549.14117"
          y="107.15943"
          id="tspan13147-9">+ better performance when</tspan><tspan
          sodipodi:role="line"
          style="font-weight:bold;stroke-width:0.375018"
-         x="323.18701"
+         x="549.14117"
          y="116.5349"
          id="tspan15109">the two are combined?</tspan></text>
     <text
@@ -2300,5 +2300,42 @@
         </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:7.50037px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;white-space:pre;inline-size:121.216;stroke-width:0.375018"
+       x="582.85571"
+       y="177.30585"
+       id="text3054-4-4-6"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\3Ddemos.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"
+       transform="translate(-260.35,-135.46667)"><tspan
+         x="582.85571"
+         y="177.30585"
+         id="tspan6966"><tspan
+           style="font-weight:bold"
+           id="tspan6964">Final demo combining both </tspan></tspan><tspan
+         x="582.85571"
+         y="186.6813"
+         id="tspan6970"><tspan
+           style="font-weight:bold"
+           id="tspan6968">mechanisms in 3D?
+</tspan></tspan><tspan
+         x="582.85571"
+         y="196.05676"
+         id="tspan6974"><tspan
+           style="font-weight:bold"
+           id="tspan6972">
+</tspan></tspan><tspan
+         x="582.85571"
+         y="205.43222"
+         id="tspan6978"><tspan
+           style="font-weight:bold"
+           id="tspan6976">Would bring paper to </tspan></tspan><tspan
+         x="582.85571"
+         y="214.80767"
+         id="tspan6982"><tspan
+           style="font-weight:bold"
+           id="tspan6980">stronger ending.</tspan></tspan></text>
   </g>
 </svg>

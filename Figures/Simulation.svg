@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="728.35187mm"
-   height="458.86761mm"
-   viewBox="0 0 728.35187 458.86761"
+   width="728.35181mm"
+   height="580.95209mm"
+   viewBox="0 0 728.35181 580.95208"
    version="1.1"
    id="svg1132"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -25,11 +25,11 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.25000001"
-     inkscape:cx="1299.9999"
-     inkscape:cy="921.99996"
-     inkscape:window-width="1920"
-     inkscape:window-height="1111"
-     inkscape:window-x="-9"
+     inkscape:cx="1218"
+     inkscape:cy="549.99998"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
@@ -39,43 +39,43 @@
     <marker
        style="overflow:visible"
        id="marker8827"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutM"
        inkscape:isstock="true">
       <path
          transform="scale(0.4)"
-         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
          id="path8825" />
     </marker>
     <marker
        style="overflow:visible"
        id="marker7310"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutM"
        inkscape:isstock="true">
       <path
          transform="scale(0.4)"
-         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
          id="path7308" />
     </marker>
     <marker
        style="overflow:visible"
        id="marker7300"
-       refX="0.0"
-       refY="0.0"
+       refX="0"
+       refY="0"
        orient="auto"
        inkscape:stockid="TriangleOutM"
        inkscape:isstock="true">
       <path
          transform="scale(0.4)"
-         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
          id="path7184" />
     </marker>
     <marker
@@ -506,7 +506,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(369.35848,123.79371)">
+     transform="translate(369.35847,123.79371)">
     <image
        width="301.06619"
        height="167.9194"
@@ -516,7 +516,7 @@
        x="-171.66196"
        y="-56.850975"
        clip-path="url(#clipPath1153)"
-       transform="matrix(1.986437,0,0,1.986437,-83.960661,18.493196)"
+       transform="matrix(1.986437,0,0,1.986437,-83.960661,29.605695)"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
@@ -542,7 +542,7 @@
        x="417.76434"
        y="-238.43738"
        clip-path="url(#clipPath1576)"
-       transform="matrix(1.986437,0,0,1.986437,-1075.8232,192.69474)"
+       transform="matrix(1.986437,0,0,1.986437,-1075.8232,202.21261)"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
@@ -550,7 +550,7 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.94903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.372876"
        x="-161.89948"
-       y="-37.200203"
+       y="-167.3752"
        id="text3017"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
@@ -559,11 +559,11 @@
          id="tspan3015"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.94903px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.372876"
          x="-161.89948"
-         y="-37.200203">Forward Solver</tspan></text>
+         y="-167.3752">Forward Solver</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.6156px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.483984"
-       x="-318.8768"
+       x="-304.58929"
        y="-104.922"
        id="text3017-4"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
@@ -572,8 +572,8 @@
          sodipodi:role="line"
          id="tspan3015-7"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.6156px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.483984"
-         x="-318.8768"
-         y="-104.922">Idealised State</tspan></text>
+         x="-304.58929"
+         y="-104.922">Ground Truth</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.6156px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.483984"
@@ -619,7 +619,7 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
-       x="2.4754956"
+       x="-29.803671"
        y="-104.45982"
        id="text3017-1-4"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
@@ -628,12 +628,12 @@
          sodipodi:role="line"
          id="tspan3015-0-51"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.10186px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
-         x="2.4754956"
-         y="-104.45982">Expected Measurements</tspan></text>
+         x="-29.803671"
+         y="-104.45982">Current pertubs voltage measurements</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
-       x="-108.87798"
+       x="-141.68631"
        y="-1.2057347"
        id="text3017-1-4-9"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
@@ -642,8 +642,36 @@
          sodipodi:role="line"
          id="tspan3015-0-51-4"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.10186px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
-         x="-108.87798"
-         y="-1.2057347">Expected Current Flows</tspan></text>
+         x="-141.68631"
+         y="-1.2057347">Conductivity perturbs current flow</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
+       x="-308.06232"
+       y="-93.656227"
+       id="text3017-1-4-9-0"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan3015-0-51-4-3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
+         x="-308.06232"
+         y="-93.656227">Less conductive inclusions</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
+       x="196.28398"
+       y="-93.656227"
+       id="text3017-1-4-9-0-2"
+       inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200"><tspan
+         sodipodi:role="line"
+         id="tspan3015-0-51-4-3-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
+         x="196.28398"
+         y="-93.656227">Conductivity from measured voltages</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.10186px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.29591"
@@ -676,7 +704,7 @@
        style="font-variation-settings:'wght' 700;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.291727;stroke-dasharray:0.875183, 0.875183"
        id="path1719-9"
        cx="-125.4536"
-       cy="31.981318"
+       cy="33.197395"
        r="1.5933939"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
@@ -698,7 +726,7 @@
        style="font-variation-settings:'wght' 700;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.291727;stroke-dasharray:0.875183, 0.875183"
        id="path1719"
        cx="-159.10828"
-       cy="43.552841"
+       cy="44.768917"
        r="1.5933939"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
@@ -707,7 +735,7 @@
        style="font-variation-settings:'wght' 700;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.291727;stroke-dasharray:0.875183, 0.875183"
        id="path1719-3"
        cx="-16.254744"
-       cy="43.482082"
+       cy="44.698158"
        r="1.5933939"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
@@ -716,14 +744,14 @@
        style="font-variation-settings:'wght' 700;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.291727;stroke-dasharray:0.875183, 0.875183"
        id="path1719-0"
        cx="-4.7781157"
-       cy="9.6303053"
+       cy="10.846381"
        r="1.5933939"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.065;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
-       d="m -11.466358,-3.3060256 h 7.3654452 c 0,0 6.4928598,0.996643 18.0539338,-8.9697974 11.561074,-9.966444 16.145636,-19.135572 16.145636,-19.135572"
+       d="M 0.70447489,-3.3060256 H 8.0699202 c 0,0 6.4928598,0.996643 18.0539338,-8.9697974 11.561074,-9.966444 16.145636,-19.135572 16.145636,-19.135572"
        id="path13863"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
@@ -731,7 +759,7 @@
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.916836;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM-8)"
-       d="m -178.2,-19.55302 h 8.17248 17.54094 c 0,0 14.94967,-0.738624 26.51074,6.647624 11.56108,7.3862508 12.15906,7.681701 12.15906,7.681701"
+       d="m -178.2,-24.31552 h 8.17248 17.54094 c 0,0 14.94967,-0.738624 26.51074,6.647624 11.56108,7.386251 12.15906,7.6817012 12.15906,7.6817012"
        id="path13863-1"
        sodipodi:nodetypes="cccsc"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
@@ -766,7 +794,7 @@
        transform="matrix(0,0.62391993,-0.62391993,0,837.78107,442.68638)"
        clip-path="url(#clipPath24065)" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.483;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.483;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M -369.28057,82.312923 H 358.78006"
        id="path17000"
        sodipodi:nodetypes="cc"
@@ -774,7 +802,7 @@
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.483;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.483;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M -369.28057,285.78129 H 358.78006"
        id="path17000-5"
        sodipodi:nodetypes="cc"
@@ -787,7 +815,7 @@
        width="87.704697"
        height="17.540939"
        x="-167.06737"
-       y="-49.293785"
+       y="-179.46878"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
        inkscape:export-xdpi="200"
        inkscape:export-ydpi="200" />
@@ -1076,7 +1104,7 @@
        inkscape:export-ydpi="200" />
     <path
        style="fill:none;stroke:#ff00ff;stroke-width:1.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.265, 2.53;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker7300)"
-       d="m -204.4504,140.17688 528.36549,0"
+       d="M -204.4504,140.17688 H 323.91509"
        id="path1630-9"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
@@ -1310,7 +1338,7 @@
          x="-364.34448"
          y="295.78244">c</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.483;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.483;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 10.80567,285.79015 V 456.97628"
        id="path2717"
        inkscape:export-filename="C:\Users\dshar\OneDrive - University of Cambridge\Documents\JRF\CubeNets\Figures\Simulation.png"
