@@ -12,8 +12,8 @@ from utils import print_info, print_warning, print_error
 
 STIM_FREQ_KHZ = 1
 PERIODS_PER_MEASUREMENT = 1
-TX_GAIN = 16  # 50k 16 32, 10k & 5k 8 8, 1k 16 16, 2k 8 16
-RX_GAIN = 16
+TX_GAIN = 8  # 50k 16 32, 10k & 5k 8 8, 1k 16 16, 2k 8 16
+RX_GAIN = 8
 
 configs = loadmat("../Data/Cube24Combos.mat")
 configs = configs["configs"]
@@ -63,6 +63,8 @@ def takereading(depth):
     Ender.write(str.encode("G1 Z" + str(Cornerposition[2] + retractheight) + " F3000\r\n"))
     waitforposition()
 
+    if clipping:
+        print("CLIPPING\n")
     return empty_frame, current_frame
 
 
