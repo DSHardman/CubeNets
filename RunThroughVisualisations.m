@@ -5,9 +5,9 @@ I = imread("Data/Cube"+string(n_elec)+".jpg");
 load("Data/ElectrodeOrder"+string(n_elec)+suffix+".mat");
 load("Data/Cube"+string(n_elec)+"Locations"+suffix+".mat");
 % load("Data/Extracted"+string(n_elec)+".mat");
-load("Data/AmodoRandoms/AmodoExtracted.mat");
+load("Data/AmodoRandomsB/AmodoBExtracted.mat");
 
-for i = 290:360
+for i = 1:360
     subplot(2,1,1);
     imshow(I);
     hold on

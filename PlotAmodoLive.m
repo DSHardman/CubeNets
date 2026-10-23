@@ -1,5 +1,5 @@
 clear device
-device = serialport("COM13",9600);
+device = serialport("COM20",9600);
 device.Timeout = 25;
 
 global baseline

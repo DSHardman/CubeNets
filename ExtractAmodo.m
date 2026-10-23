@@ -1,3 +1,4 @@
+% lines = join(readlines("Data/AmodoRandomsB/AmodoRandomsB.txt"));
 lines = join(readlines("Data/AmodoRandoms/AmodoRandoms.txt"));
 lines = split(lines, "] "); lines = lines(1:end-1);
 

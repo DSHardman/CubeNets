@@ -1,6 +1,7 @@
 %% Load in and process WAMs data
 
 load("Data/AmodoRandoms/AmodoExtracted.mat");
+% load("Data/AmodoRandomsB/AmodoBExtracted.mat");
 
 responses = responseobject.responses;
 targetpositions = responseobject.positions;
@@ -19,7 +20,7 @@ targetpositions = targetpositions(traininds, :);
 %% Connect to board and set baseline
 
 clear device
-device = serialport("COM13",9600);
+device = serialport("COM20",9600);
 device.Timeout = 25;
 
 flush(device); readline(device);
@@ -84,9 +85,10 @@ for i = 1:n
     %                 mean(targetpositions(ind(1:n), 2))];
 
     % Plot prediction
+    % sum = max(sum, 0);
     scatter(targetpositions(:,1), targetpositions(:,2), 150, sum, 'filled');
-    sum = max(sum, 0);
     % clim([0 max(0.03, max(sum))]);
+    clim([-500 500]);
     colorbar
     title(string(i));
 

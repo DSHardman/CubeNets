@@ -232,10 +232,9 @@ subplot(2,2,4);
 f = show_fem(rec_img, [1 0 0]); axis off;
 colorbar off;
 
-return
 %% Plot actual data, if board attached
 clear device
-device = serialport("COM11",9600);
+device = serialport("COM20",9600);
 device.Timeout = 25;
 
 flush(device); readline(device);

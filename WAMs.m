@@ -1,6 +1,7 @@
 %% Load in data
 % load("Data/Old/Extracted24.mat");
 load("Data/AmodoRandoms/AmodoExtracted.mat");
+% load("Data/AmodoRandomsB/AmodoBExtracted.mat");
 
 responses = responseobject.responses;
 targetpositions = responseobject.positions;
@@ -15,6 +16,7 @@ figure();
 error = median(wamtesting(1:360, responses, targetpositions, 1))
 sgtitle("Median error over entire test set: "+ string(error) + " mm");
 % Note that naive mean prediction would be 29.8537 mm
+return
 
 % figure();
 % rollingerror = zeros([359, 10]);
