@@ -135,7 +135,7 @@ end
 
 %% Solve forward homogeneous model
 sim_img= mk_image(fmdl,1);
-homo_c = 0.7;
+homo_c = 1; % was 0.7
 for j = 1:length(sim_img.elem_data)
     sim_img.elem_data(j) = homo_c;
 end
@@ -144,7 +144,7 @@ sim_img.fwd_solve.get_all_meas = 1;
 vh = fwd_solve(sim_img);
 
 %% Add inclusions, solve forward, and plot
-inclusion_c = 0.3;
+inclusion_c = 1.5; % was 0.3
 location1 = [0.6 -0.2]; location2 = [-1.5 0]; radius = 0.15;
 for i = 1:length(fmdl.elems)
     corners = [fmdl.nodes(fmdl.elems(i, 1), :);...

@@ -5,31 +5,33 @@ I = imread("Data/Cube"+string(n_elec)+".jpg");
 load("Data/ElectrodeOrder"+string(n_elec)+suffix+".mat");
 load("Data/Cube"+string(n_elec)+"Locations"+suffix+".mat");
 % load("Data/Extracted"+string(n_elec)+".mat");
-load("Data/AmodoRandomsB/AmodoBExtracted.mat");
+load("Data/AmodoRandomsBClipped/AmodoBExtracted.mat");
 
 for i = 1:360
-    subplot(2,1,1);
+    % subplot(2,1,1);
     imshow(I);
     hold on
     scatter(pointlocs(electrodes(i, 1:2),1), pointlocs(electrodes(i, 1:2),2), 50, 'r', 'filled'); % Inject red
     scatter(pointlocs(electrodes(i, 3:4),1), pointlocs(electrodes(i, 3:4),2), 50, 'b', 'filled'); % Measure blue
 
-    subplot(2,1,2);
-    if n_elec == 6
-        scatter(responseobject.positions(:,1), -responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
-    elseif n_elec == 24
-        % scatter(responseobject.positions(:,1), responseobject.positions(:,2), 30, abs(responseobject.responses(:, i)), 'filled');
-        interpolatedcube(responseobject, i);
-        colormap cool
-    end
+    % subplot(2,1,2);
+    % if n_elec == 6
+    %     scatter(responseobject.positions(:,1), -responseobject.positions(:,2), 30, responseobject.responses(:, i), 'filled');
+    % elseif n_elec == 24
+    %     % scatter(responseobject.positions(:,1), responseobject.positions(:,2), 30, abs(responseobject.responses(:, i)), 'filled');
+    %     interpolatedcube(responseobject, i);
+    %     colormap cool
+    % end
+    % 
+    % % set(gcf, 'color', 'w', 'position', [946    98   462   730]);
+    % set(gcf, 'color', 'w');
+    % sgtitle(string(i));
+    % % colorbar();
+    % axis equal
+    % colorbar off
 
-    % set(gcf, 'color', 'w', 'position', [946    98   462   730]);
-    set(gcf, 'color', 'w');
-    sgtitle(string(i));
-    % colorbar();
-    axis equal
-    colorbar off
-
-    pause();
+    title(string(i));
+    exportgraphics(gcf, string(i)+".png", "resolution", 100);
+    % pause();
     clf
 end

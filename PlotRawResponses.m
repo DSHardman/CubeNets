@@ -14,7 +14,7 @@ subplot(3,1,1); plotdepths(readings, channel, [18 61; 70 113; 121 164]);
 subplot(3,1,2); plotdepths(readings, channel, [173 216; 224 267; 275 318]);
 subplot(3,1,3); plotdepths(readings, channel, [327 370; 378 421; 420 472]);
 set(gcf, 'color', 'w', 'position', [994 155 310 631]);
-
+return
 
 %% Data stream
 figure();
