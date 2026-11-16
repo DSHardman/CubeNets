@@ -1,10 +1,21 @@
 %% Load in data
 % load("Data/Old/Extracted24.mat");
 load("Data/AmodoRandoms/AmodoExtracted.mat");
-% load("Data/AmodoRandomsB/AmodoBExtracted.mat");
+% load("Data/AmodoRandomsBPoor/AmodoBExtracted.mat");
 
 responses = responseobject.responses;
 targetpositions = responseobject.positions;
+
+%% Quick test: using one skin's WAMs to predict another
+% load("Data/AmodoRandomsBPoor/AmodoBExtracted.mat");
+load("Data/Old/Extracted24.mat");
+% load("Data/AmodoRandomsBClipped/AmodoBExtracted.mat");
+responses = [responses; responseobject.responses];
+targetpositions = [targetpositions; responseobject.positions];
+allerrors = wamtesting(1:360, responses, targetpositions, 1, 3001:6000, 1:3000);
+error = median(allerrors)
+return
+
 
 %% Perform F-Test ranking
 ranking = franking(responses, targetpositions);
@@ -13,7 +24,8 @@ ranking = franking(responses, targetpositions);
 % At the moment, these are the bad predictions
 % Prediction in pink, ground truth in red
 figure();
-error = median(wamtesting(1:360, responses, targetpositions, 1))
+errors = wamtesting(1:360, responses, targetpositions, 1);
+error = median(errors)
 sgtitle("Median error over entire test set: "+ string(error) + " mm");
 % Note that naive mean prediction would be 29.8537 mm
 return
@@ -40,6 +52,7 @@ end
 % scatter(targetpositions(:, 1), targetpositions(:, 2), 30, errors, 'filled');
 interpolatedcube(targetpositions(:, 1), targetpositions(:, 2), errors); colormap hot
 % caxis([0 20])
+return
 
 % Median error per face
 clear faceerrors
@@ -139,6 +152,16 @@ function allerrors = wamtesting(combinations, responses, targetpositions, figs, 
         % Add localization error to running sum 
         % error = error + rssq(prediction-testpositions(i,:));
         allerrors = [allerrors; rssq(prediction-testpositions(i,:))];
+
+        % % Visualise all test set errors
+        % if rssq(prediction-testpositions(i,:)) < 200
+        %     line([prediction(1) testpositions(i,1)],...
+        %         [prediction(2) testpositions(i,2)],...
+        %         'color', 'k');
+        %     hold on
+        %     scatter(prediction(1), prediction(2), 30, 'm', 'filled');
+        %     scatter(testpositions(i,1), testpositions(i,2), 30, 'b', 'filled');
+        % end
 
         % Plot first 10 predictions
         if figs && i <= 10
